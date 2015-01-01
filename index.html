@@ -1,123 +1,53 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Lawrence Humphrey</title>
-    <meta name="viewport" content = "width=device-width, initial-scale=1.0">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-  </head>
-  <body>
+!DOCTYPE html>
+<html  lang="en">
+    <head >
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
+        <title >Lawrence Humphrey</title>
+	
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Cantarell:700' rel='stylesheet' type='text/css'>
+        
+        <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script  src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-    <!--Begin Navbar-->
-    <div class = "navbar navbar-inverse navbar-static-top">
-      <div class = "container">
-
-        <a href = "index.html" class = "navbar-brand"><span class = "glyphicon glyphicon-home"></span></a>
-
-        <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
-          <span class = "icon-bar"></span>
-          <span class = "icon-bar"></span>
-          <span class = "icon-bar"></span>
-        </button>
-
-        <div class = "collapse navbar-collapse navHeaderCollapse">
-
-          <ul class = "nav navbar-nav navbar-right">
-
-            <li class = "active"> <a href = "index.html"> Me </a> </li>
-            <li><a href="work.html">Work</a></li>
-            <li><a href="play.html">Play</a></li>
-            <li><a href="core.html">Core</a></li>
-
-            <li class = "dropdown">
-              <a class = "dropdown-toggle" data-toggle = "dropdown" href = "#">
-                Links <b class = "caret"></b>
-                <ul class = "dropdown-menu">
-                  <li><a href = "http://www.lhumphr2.tk">Facebook</a></li>
-                  <li><a href = "https://github.com/lawhump">GitHub</a></li>
-                </ul>
-              </a>
-
-            </li>
-            <li><a href="mailto:lhumphr2@illinois.edu">Email</a></li>
-
-          </ul>
-
-        </div>
-      </div>
-    </div>
-    <!--End Navbar-->
-
-
-
-    <!--Dat body doe-->
-    <div class = "container">
-      <div id="carousel-example-generic" class="carousel slide">
-    <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-
-          <div class="item active">
-            <img src="img/mecropped.jpg" class = "image-responsive" alt = "Responsive image">
-            <div class="carousel-caption">
-              <h3>Welcome to my site!</h3>
-            </div>
-          </div>
-
-          <div class="item">
-            <img src="img/friendscropped.jpg" class = "image-responsive" alt = "Responsive image">
-            <div class="carousel-caption">
-              <h3>I major in computer science at the University of Illinois</h3>
-            </div>
-          </div>
-          <div class="item">
-            <img src="img/Qualcommcropped.jpg" class = "image-responsive" alt = "Responsive image">
-            <div class="carousel-caption">
-              <h3>This site is an effort for you to understand a little more about me.</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    </head>
     
+    <body>
+        
+        <ul id="scene">
+            <li class="layer" data-depth="0.10"><img  src="img/star.jpg"></li>
+        </ul>
+        
+        <div class="title">
+            <h1>
+                Lawrence Humphrey
+            </h1>
+        </div>
+        
+        <div class="description">
+            <p>
+                Front-end web and Android developer and tech enthusiast<!--<span class="traits"></span>--></p>
+            </p>
+        </div>
+        
+        <div class="overlay">
+            <div  class="me"><img  src="img/me.jpg" alt="Me" id="me"></div>
+        </div>
+        
+        <div class="links-container">
+            <button  id="linkedin"> <img  src="img/linkedin-3-256.png" alt="linkedin"> </button>
+            <button  id="github"> <img  src="img/GitHub-Mark-64px.png" alt="github"> </button>
+            <button  id="resume"> <img  src="img/curriculum.png" alt="resume"> </button>
+            <button  id="spotify"> <img  src="img/spotify-logo.png" alt="spotify"> </button>
+        </div>
+        
+        <script src="js/parallax.js"></script>
+        <script src="js/scene.js"></script>
+        <!--<script src="js/traits.js"></script>-->
+    </body>
     
-  <div
-  class="fb-like"
-  data-share="true"
-  data-width="450"
-  data-show-faces="true">
-  </div>
-
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-  </a>
-</div>
-
-
-
-    <!--Begin Footer-->
-    <div class = "navbar navbar-default navbar-fixed-bottom">
-      <div class = "container">
-        <p class = "navbar-text pull-left">Site Built By Lawrence Humphrey via Bootstrap 3.0.3</p>
-      </div>
-    </div>
-    <!--End Footer-->
-
-
-
-    <script src = "http://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src = "js/bootstrap.js"></script>
-
-  </body>
 </html>
