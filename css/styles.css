@@ -51,6 +51,12 @@
     border: 2px solid #ffffff;
     border-radius: 150px;
     opacity: 0.9;
+    
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .links-container {
@@ -182,6 +188,39 @@ and (max-device-width : 480px) {
     }
 }
 
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+    html{
+        overflow-x: hidden;        
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .title {
+        top: 15%;
+    }
+
+    .overlay {
+        height: 70px;
+        width: 70px;
+    }
+    
+    #me {
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+    }
+
+    .links-container {
+        top: 80%;
+    }
+}
+
 /* Smartphones (portrait) ----------- */
 @media only screen 
 and (max-width : 320px) {
@@ -245,7 +284,7 @@ and (max-device-width : 1024px) {
     }
 
     .links-container {
-        top: 80%;
+        top: 70%;
     }
 }
 
@@ -280,7 +319,7 @@ and (orientation : landscape) {
     }
 
     .links-container {
-        top: 80%;
+        top: 70%;
     }
 }
 
@@ -315,7 +354,7 @@ and (orientation : portrait) {
     }
 
     .links-container {
-        top: 80%;
+        top: 70%;
     }
 }
 
@@ -381,7 +420,7 @@ and (min-width : 1824px) {
     }
 
     .links-container {
-        top: 80%;
+        top: 70%;
     }
 }
 
