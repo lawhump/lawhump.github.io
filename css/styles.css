@@ -154,45 +154,10 @@ body {
     font-family: 'Cantarell', sans-serif;
 }
 
-
-@media only screen and (min-aspect-ratio: 4/3) {
-
-    html{
-        overflow-x: hidden;        
-    }
-
-    body{
-        overflow-x: hidden;
-    }
-
-    .title {
-        height: 3em;
-        width: 100%;
-        position: relative;
-        margin: 0;
-        position: absolute;
-        top: 15%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        
-        display: none;
-    }
-
-    .links-container {
-        height: 42px;
-        text-align: justify;
-        margin: 0;
-        position: absolute;
-        top: 80%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 0.1px; /* IE 9/10 don't like font-size: 0; */
-        min-width: 350px;
-        display: none;
-    }
-}
-
-@media only screen and (min-aspect-ratio: 16/9) {
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
 
     html{
         overflow-x: hidden;        
@@ -229,3 +194,78 @@ body {
     }
 }
 
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+    html{
+        overflow-x: hidden;        
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .title {
+        height: 3em;
+        width: 100%;
+        position: relative;
+        margin: 0;
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+        display: none;
+    }
+
+    .links-container {
+        height: 42px;
+        text-align: justify;
+        margin: 0;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 0.1px; /* IE 9/10 don't like font-size: 0; */
+        min-width: 350px;
+        display: none;
+    }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+    html{
+        overflow-x: hidden;        
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .title {
+        height: 3em;
+        width: 100%;
+        position: relative;
+        margin: 0;
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+        display: none;
+    }
+
+    .links-container {
+        height: 42px;
+        text-align: justify;
+        margin: 0;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 0.1px; /* IE 9/10 don't like font-size: 0; */
+        min-width: 350px;
+        display: none;
+    }
+}
