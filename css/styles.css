@@ -34,11 +34,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     display: none;
-    
-    /*background-color: #ffffff;
-    border: 0px solid;
-    border-radius: 150px;
-    opacity: 0.6;*/
 }
 
 .me {
@@ -166,93 +161,24 @@ and (max-device-width : 480px) {
     }
 
     .title {
-        height: 3em;
-        width: 100%;
-        position: relative;
-        margin: 0;
-        position: absolute;
         top: 15%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        
-        display: none;
     }
 
     .overlay {
-        height: 60px;
-        width: 60px;
+        height: 70px;
+        width: 70px;
     }
     
     #me {
-        width: 50px;
-        height: 50px;
-        border-radius: 25px;
-        -webkit-border-radius: 25px;
-        -moz-border-radius: 25px;
-    }
-
-    .links-container {
-        height: 42px;
-        text-align: justify;
-        margin: 0;
-        position: absolute;
-        top: 80%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 0.1px; /* IE 9/10 don't like font-size: 0; */
-        min-width: 350px;
-        display: none;
-    }
-}
-
-/* Smartphones (landscape) ----------- */
-@media only screen 
-and (min-width : 321px) {
-    html{
-        overflow-x: hidden;        
-    }
-
-    body{
-        overflow-x: hidden;
-    }
-
-    .title {
-        height: 3em;
-        width: 100%;
-        position: relative;
-        margin: 0;
-        position: absolute;
-        top: 15%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        
-        display: none;
-    }
-    
-    .overlay {
-        height: 60px;
         width: 60px;
-    }
-
-    #me {
-        width: 50px;
-        height: 50px;
-        border-radius: 25px;
-        -webkit-border-radius: 25px;
-        -moz-border-radius: 25px;
+        height: 60px;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
     }
 
     .links-container {
-        height: 42px;
-        text-align: justify;
-        margin: 0;
-        position: absolute;
         top: 80%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 0.1px; /* IE 9/10 don't like font-size: 0; */
-        min-width: 350px;
-        display: none;
     }
 }
 
@@ -268,16 +194,7 @@ and (max-width : 320px) {
     }
 
     .title {
-        height: 3em;
-        width: 100%;
-        position: relative;
-        margin: 0;
-        position: absolute;
         top: 15%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        
-        display: none;
     }
     
     .overlay {
@@ -294,15 +211,210 @@ and (max-width : 320px) {
     }
 
     .links-container {
-        height: 42px;
-        text-align: justify;
-        margin: 0;
-        position: absolute;
         top: 80%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 0.1px; /* IE 9/10 don't like font-size: 0; */
-        min-width: 350px;
-        display: none;
+    }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+    html{
+        overflow-x: hidden;        
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .title {
+        top: 25%;
+    }
+    
+    .overlay {
+        height: 230px;
+        width: 300px;
+    }
+
+    #me {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+    }
+
+    .links-container {
+        top: 80%;
+    }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+    html{
+        overflow-x: hidden;        
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .title {
+        top: 25%;
+    }
+    
+    .overlay {
+        height: 230px;
+        width: 300px;
+    }
+
+    #me {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+    }
+
+    .links-container {
+        top: 80%;
+    }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+    html{
+        overflow-x: hidden;        
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .title {
+        top: 25%;
+    }
+    
+    .overlay {
+        height: 230px;
+        width: 300px;
+    }
+
+    #me {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+    }
+
+    .links-container {
+        top: 80%;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+    html{
+        overflow-x: hidden;        
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .title {
+        top: 25%;
+    }
+    
+    .overlay {
+        height: 230px;
+        width: 300px;
+    }
+
+    #me {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+    }
+
+    .links-container {
+        top: 80%;
+    }
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+    html{
+        overflow-x: hidden;        
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .title {
+        top: 25%;
+    }
+    
+    .overlay {
+        height: 230px;
+        width: 300px;
+    }
+
+    #me {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+    }
+
+    .links-container {
+        top: 80%;
+    }
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+    html{
+        overflow-x: hidden;        
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .title {
+        top: 25%;
+    }
+    
+    .overlay {
+        height: 230px;
+        width: 300px;
+    }
+
+    #me {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+    }
+
+    .links-container {
+        top: 80%;
     }
 }
