@@ -153,3 +153,41 @@ body {
     
     font-family: 'Cantarell', sans-serif;
 }
+
+@media screen and (min-aspect-ratio: 16/9) {
+
+    html{
+        overflow-x: hidden;        
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .title {
+        height: 3em;
+        width: 100%;
+        position: relative;
+        margin: 0;
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+        display: none;
+    }
+
+    .links-container {
+        height: 42px;
+        text-align: justify;
+        margin: 0;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 0.1px; /* IE 9/10 don't like font-size: 0; */
+        min-width: 350px;
+        display: none;
+    }
+}
+
