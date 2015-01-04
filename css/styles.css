@@ -271,16 +271,16 @@ and (max-device-width : 1024px) {
     }
     
     .overlay {
-        height: 230px;
-        width: 300px;
+        height: 110px;
+        width: 110px;
     }
 
     #me {
-        width: 200px;
-        height: 200px;
-        border-radius: 100px;
-        -webkit-border-radius: 100px;
-        -moz-border-radius: 100px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
     }
 
     .links-container {
@@ -306,16 +306,16 @@ and (orientation : landscape) {
     }
     
     .overlay {
-        height: 230px;
-        width: 300px;
+        height: 110px;
+        width: 110px;
     }
 
     #me {
-        width: 200px;
-        height: 200px;
-        border-radius: 100px;
-        -webkit-border-radius: 100px;
-        -moz-border-radius: 100px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
     }
 
     .links-container {
@@ -341,16 +341,16 @@ and (orientation : portrait) {
     }
     
     .overlay {
-        height: 230px;
-        width: 300px;
+        height: 110px;
+        width: 110px;
     }
 
     #me {
-        width: 200px;
-        height: 200px;
-        border-radius: 100px;
-        -webkit-border-radius: 100px;
-        -moz-border-radius: 100px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
     }
 
     .links-container {
@@ -387,7 +387,7 @@ and (min-width : 1224px) {
     }
 
     .links-container {
-        top: 80%;
+        top: 70%;
     }
 }
 
@@ -441,19 +441,19 @@ only screen and (min-device-pixel-ratio : 1.5) {
     }
     
     .overlay {
-        height: 230px;
-        width: 300px;
+        height: 110px;
+        width: 110px;
     }
 
     #me {
-        width: 200px;
-        height: 200px;
-        border-radius: 100px;
-        -webkit-border-radius: 100px;
-        -moz-border-radius: 100px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
     }
 
     .links-container {
-        top: 80%;
+        top: 70%;
     }
 }
