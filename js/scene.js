@@ -13,12 +13,18 @@ var resizescene = function() {
                 height: "auto"
             });
         }
+    var cw = $('#me').width();
+    $('#me').css({'height':cw+'px'});
 }
 
 $(window).resize(resizescene).ready(resizescene);
+$(window).load(function(){
+    var cw = $('#me').width();
+    $('#me').css({'height':cw+'px'});
+});
 
 $("#linkedin").click(function() {
-    window.location.href = 'http://zylch.co/lhumphr2';
+    window.location.href = 'http://www.linkedin.com/in/lawrencehumphrey';
 });
 
 $("#github").click(function() {

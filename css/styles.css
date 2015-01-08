@@ -1,3 +1,15 @@
+html{
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+body{
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
 .title {
     height: 3em;
     width: 100%;
@@ -25,8 +37,8 @@
 }
 
 .overlay {
-    height: 230px;
-    width: 300px;
+    height: 30%;
+    width: 30%;
     position: relative;
     margin: 0;
     position: absolute;
@@ -36,16 +48,14 @@
     display: none;
 }
 
-.me {
-    text-align: center;
-}
-
 #me {
-    width: 200px;
-	height: 200px;
-	border-radius: 100px;
-	-webkit-border-radius: 100px;
-	-moz-border-radius: 100px;
+    width: 100%;
+	height: 100%;
+    max-height: 230px;
+    max-width: 230px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
     
     background-color: #ffffff;
     border: 2px solid #ffffff;
@@ -140,7 +150,7 @@ body {
 }
 
 .description {
-    width: 75%;
+    width: 90%;
     color: #ffffff;
     text-align: center;
     margin: 0;
@@ -157,31 +167,16 @@ body {
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
-
-    html{
-        overflow-x: hidden;        
-    }
-
-    body{
-        overflow-x: hidden;
-    }
-
     .title {
         top: 15%;
     }
 
     .overlay {
-        height: 70px;
-        width: 70px;
+        height: 30%;
+        width: 30%;
     }
     
-    #me {
-        width: 60px;
-        height: 60px;
-        border-radius: 30px;
-        -webkit-border-radius: 30px;
-        -moz-border-radius: 30px;
-    }
+
 
     .links-container {
         top: 80%;
@@ -191,30 +186,16 @@ and (max-device-width : 480px) {
 /* Smartphones (landscape) ----------- */
 @media only screen 
 and (min-width : 321px) {
-    html{
-        overflow-x: hidden;        
-    }
-
-    body{
-        overflow-x: hidden;
-    }
-
     .title {
         top: 15%;
     }
 
     .overlay {
-        height: 70px;
-        width: 70px;
+        height: 30%;
+        width: 30%;
     }
     
-    #me {
-        width: 60px;
-        height: 60px;
-        border-radius: 30px;
-        -webkit-border-radius: 30px;
-        -moz-border-radius: 30px;
-    }
+
 
     .links-container {
         top: 80%;
@@ -224,30 +205,16 @@ and (min-width : 321px) {
 /* Smartphones (portrait) ----------- */
 @media only screen 
 and (max-width : 320px) {
-    html{
-        overflow-x: hidden;        
-    }
-
-    body{
-        overflow-x: hidden;
-    }
-
     .title {
         top: 15%;
     }
     
     .overlay {
-        height: 60px;
-        width: 60px;
+        height: 30%;
+        width: 30%;
     }
 
-    #me {
-        width: 50px;
-        height: 50px;
-        border-radius: 25px;
-        -webkit-border-radius: 25px;
-        -moz-border-radius: 25px;
-    }
+
 
     .links-container {
         top: 80%;
@@ -258,30 +225,16 @@ and (max-width : 320px) {
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
-    html{
-        overflow-x: hidden;        
-    }
-
-    body{
-        overflow-x: hidden;
-    }
-
     .title {
         top: 25%;
     }
     
     .overlay {
-        height: 110px;
-        width: 110px;
+        height: 30%;
+        width: 30%;
     }
 
-    #me {
-        width: 100px;
-        height: 100px;
-        border-radius: 50px;
-        -webkit-border-radius: 50px;
-        -moz-border-radius: 50px;
-    }
+
 
     .links-container {
         top: 70%;
@@ -293,30 +246,16 @@ and (max-device-width : 1024px) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : landscape) {
-    html{
-        overflow-x: hidden;        
-    }
-
-    body{
-        overflow-x: hidden;
-    }
-
     .title {
         top: 25%;
     }
     
     .overlay {
-        height: 110px;
-        width: 110px;
+        height: 30%;
+        width: 30%;
     }
 
-    #me {
-        width: 100px;
-        height: 100px;
-        border-radius: 50px;
-        -webkit-border-radius: 50px;
-        -moz-border-radius: 50px;
-    }
+
 
     .links-container {
         top: 70%;
@@ -328,29 +267,13 @@ and (orientation : landscape) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : portrait) {
-    html{
-        overflow-x: hidden;        
-    }
-
-    body{
-        overflow-x: hidden;
-    }
-
     .title {
         top: 25%;
     }
     
     .overlay {
-        height: 110px;
-        width: 110px;
-    }
-
-    #me {
-        width: 100px;
-        height: 100px;
-        border-radius: 50px;
-        -webkit-border-radius: 50px;
-        -moz-border-radius: 50px;
+        height: 30%;
+        width: 30%;
     }
 
     .links-container {
@@ -361,29 +284,13 @@ and (orientation : portrait) {
 /* Desktops and laptops ----------- */
 @media only screen 
 and (min-width : 1224px) {
-    html{
-        overflow-x: hidden;        
-    }
-
-    body{
-        overflow-x: hidden;
-    }
-
     .title {
         top: 25%;
     }
     
     .overlay {
-        height: 230px;
-        width: 300px;
-    }
-
-    #me {
-        width: 200px;
-        height: 200px;
-        border-radius: 100px;
-        -webkit-border-radius: 100px;
-        -moz-border-radius: 100px;
+        height: 30%;
+        width: 30%;
     }
 
     .links-container {
@@ -394,29 +301,13 @@ and (min-width : 1224px) {
 /* Large screens ----------- */
 @media only screen 
 and (min-width : 1824px) {
-    html{
-        overflow-x: hidden;        
-    }
-
-    body{
-        overflow-x: hidden;
-    }
-
     .title {
         top: 25%;
     }
     
     .overlay {
-        height: 230px;
-        width: 300px;
-    }
-
-    #me {
-        width: 200px;
-        height: 200px;
-        border-radius: 100px;
-        -webkit-border-radius: 100px;
-        -moz-border-radius: 100px;
+        height: 30%;
+        width: 30%;
     }
 
     .links-container {
@@ -428,29 +319,13 @@ and (min-width : 1824px) {
 @media
 only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
-    html{
-        overflow-x: hidden;        
-    }
-
-    body{
-        overflow-x: hidden;
-    }
-
     .title {
         top: 25%;
     }
     
     .overlay {
-        height: 110px;
-        width: 110px;
-    }
-
-    #me {
-        width: 100px;
-        height: 100px;
-        border-radius: 50px;
-        -webkit-border-radius: 50px;
-        -moz-border-radius: 50px;
+        height: 30%;
+        width: 30%;
     }
 
     .links-container {
