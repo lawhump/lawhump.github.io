@@ -32,7 +32,8 @@ $("#github").click(function() {
 });
 
 $("#resume").click(function() {
-    alert( "Handler for .click() called." );
+    var win = window.open("resume.pdf", '_blank');
+    win.focus();
 });
 
 $("#spotify").click(function() {
