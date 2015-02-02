@@ -10,7 +10,8 @@ html{
     position: relative;
     margin: 0;
     position: absolute;
-    top: 25%;
+/*    top: 25%;*/
+    top: 25vh;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -40,7 +41,8 @@ html{
     position: relative;
     margin: 0;
     position: absolute;
-    top: 50%;
+/*    top: 50%;*/
+    top: 50vh;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -76,7 +78,8 @@ html{
     text-align: justify;
     margin: 0;
     position: absolute;
-    top: 70%;
+/*    top: 70%;*/
+    top: 75vh;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -203,7 +206,8 @@ button:hover {
     text-align: center;
     margin: 0;
     position: absolute;
-    top: 32%;
+/*    top: 32%;*/
+    top: 32vh;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -213,207 +217,5 @@ button:hover {
     font-family: 'Cantarell', sans-serif;
 }
 
-
-.animate {
-	-webkit-animation:ripple 0.65s linear;
-   -moz-animation:ripple 0.65s linear;
-    -ms-animation:ripple 0.65s linear;
-     -o-animation:ripple 0.65s linear;
-        animation:ripple 0.65s linear;
-}
-
-@-webkit-keyframes ripple {
-    100% {opacity: 0; -webkit-transform: scale(2.5);}
-}
-@-moz-keyframes ripple {
-    100% {opacity: 0; -moz-transform: scale(2.5);}
-}
-@-o-keyframes ripple {
-    100% {opacity: 0; -o-transform: scale(2.5);}
-}
-@keyframes ripple {
-    100% {opacity: 0; transform: scale(2.5);}
-}
-
-
 .grayscale {-webkit-filter: grayscale(100%);}
 
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-    .title {
-        top: 20%;
-    }
-
-    .overlay {
-        height: 30%;
-        width: 30%;
-    }
-    
-
-
-    .links-container {
-        min-width: 280px;
-        top: 80%;
-    }
-}
-
-/* Smartphones (landscape) ----------- */
-@media only screen 
-and (min-width : 321px) {
-    .title {
-        top: 20%;
-    }
-
-    .overlay {
-        height: 30%;
-        width: 30%;
-    }
-    
-
-
-    .links-container {
-        min-width: 280px;
-        top: 80%;
-    }
-}
-
-/* Smartphones (portrait) ----------- */
-@media only screen 
-and (max-width : 320px) {
-    .title {
-        top: 20%;
-    }
-    
-    .overlay {
-        height: 30%;
-        width: 30%;
-    }
-
-
-
-    .links-container {
-        min-width: 280px;
-        top: 80%;
-    }
-}
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
-    .title {
-        top: 25%;
-    }
-    
-    .overlay {
-        height: 30%;
-        width: 30%;
-    }
-    
-    .links-container {
-        top: 70%;
-    }
-}
-
-/* iPads (landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : landscape) {
-    .title {
-        top: 25%;
-    }
-    
-    .overlay {
-        height: 30%;
-        width: 30%;
-    }
-
-    .links-container {
-        top: 70%;
-    }
-}
-
-/* iPads (portrait) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : portrait) {
-    .title {
-        top: 25%;
-    }
-    
-    .overlay {
-        height: 30%;
-        width: 30%;
-    }
-
-    .links-container {
-        top: 70%;
-    }
-}
-
-/* Desktops and laptops ----------- */
-@media only screen 
-and (min-width : 1224px) {
-    .title {
-        top: 25%;
-    }
-    
-    .overlay {
-        height: 30%;
-        width: 30%;
-    }
-
-    .links-container {
-        top: 70%;
-    }
-}
-
-/* Large screens ----------- */
-@media only screen 
-and (min-width : 1824px) {
-    .title {
-        top: 25%;
-    }
-    
-    .overlay {
-        height: 30%;
-        width: 30%;
-    }
-
-    .links-container {
-        top: 70%;
-    }
-}
-
-/* iPhone 4 ----------- */
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
-    .title {
-        top: 25%;
-    }
-    
-    .overlay {
-        height: 30%;
-        width: 30%;
-    }
-
-    .links-container {
-        top: 70%;
-    }
-}
-.body-wrapper {
-    overflow: hidden;
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
-
-body{
-    overflow: hidden;
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
