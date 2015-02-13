@@ -1,50 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Lawrence Humphrey</title>
-		
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
-        <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Cantarell:700' rel='stylesheet' type='text/css'>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <!--Fonts-->
+        <link href='http://fonts.googleapis.com/css?family=Stint+Ultra+Expanded' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
         
-        <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script  src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
-    
     <body>
-        
-        <ul id="scene">
-            <li class="layer" data-depth="0.10"><img  src="img/star.jpg"></li>
-            <li class="layer" data-depth="0.00"></li>
-        </ul>
-        
-        <div class="title">
-            <h1>Lawrence Humphrey</h1>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div class="content">
+            <h2>Hi! I'm Lawrence Humphrey.</h2>
+            <p>I'm a junior at the University of Illinois Urbana-Champaign. I study computer science with a passion for Web and Android development.</p>
+            <p>When I'm not building things, I'm likely climbing, dancing, adventuring, coffee shopping, or skating.</p>
+            <p>Other interests include: material design, craft beer, discovering new music, minimalist designs, meeting new people, brainstorming, challenging my comfort zone, and trying new things.</p>
+            <p>Interested? Don't be a stranger! Email me at <a href="mailto:name@email.com">lhumphr2@illinois.edu</a></p>
+            <hr>
+            <a href="http://www.linkedin.com/in/lawrencehumphrey">LinkedIn</a> / <a href="https://github.com/lawhump">GitHub</a>  / <a href="">Resume</a> / <a href="http://open.spotify.com/user/lawrencehumphrey">Spotify</a> 
         </div>
-        
-        <div class="description">
-            <p>Front-end web and Android developer and tech enthusiast<!--<span class="traits"></span>--></p>
-        </div>
-        
-        <div class="overlay">
-            <img src="img/me.jpg" alt="Me" id="me">
-        </div>
-        
-        <div class="links-container">
-            <button id="linkedin"> <img src="img/linkedin-3-256.png" alt="linkedin"> </button>
-            <button id="github"> <img src="img/GitHub-Mark-64px.png" alt="github"> </button>
-            <button id="resume"> <img src="img/curriculum.png" alt="resume"> </button>
-            <button id="spotify"> <img class="grayscale" src="img/spotify-logo.png" alt="spotify"> </button>
-        </div>
-        
-        <script src="js/parallax.js"></script>
-        <script src="js/scene.js"></script>
-        <!--<script src="js/traits.js"></script>-->
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
     </body>
-    
 </html>
