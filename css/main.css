@@ -95,12 +95,14 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Stint Ultra Expanded', cursive;
+/*    font-family: 'Stint Ultra Expanded', cursive;*/
+    font-family: 'Nixie One', cursive;
 }
 
 p,
 a {
-    font-family: 'Pontano Sans', sans-serif;
+/*    font-family: 'Pontano Sans', sans-serif;*/
+    font-family: 'Libre Baskerville', serif;
 }
 
 

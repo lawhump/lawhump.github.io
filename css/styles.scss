@@ -1,10 +1,19 @@
 @import 'main.css';
 @import 'normalize.css';
 
-
 .content {
+    position: fixed;
+    padding: 2em;
     margin-top: 3vh;
     margin-left: 3vw;
     display: block;
-    width: 60%;
+    width: 45%;
+    
+    background-color:rgba(255,255,255,0.45);
+    border-radius: 20px;
+    
+    p,
+    a{
+        font-size: 12px;    
+    }
 }

@@ -1,10 +1,17 @@
 @import url(main.css);
 @import url(normalize.css);
-/* line 5, /Users/lawrencehumphrey/Dev/i-should-be-working/css/styles.scss */
+/* line 4, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
 .content {
+  position: fixed;
+  padding: 2em;
   margin-top: 3vh;
   margin-left: 3vw;
   display: block;
-  width: 60%; }
+  width: 45%;
+  background-color: rgba(255, 255, 255, 0.45);
+  border-radius: 20px; }
+  /* line 16, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+  .content p, .content a {
+    font-size: 12px; }
 
 /*# sourceMappingURL=styles.css.map */
