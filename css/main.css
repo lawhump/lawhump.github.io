@@ -1,4 +1,4 @@
-/*! HTML5 Boilerplate v5.0.0 | MIT License | http://h5bp.com/ */
+/*! HTML5 Boilerplate v5.1.0 | MIT License | https://html5boilerplate.com/ */
 
 /*
  * What follows is the result of much research on cross-browser styling.
@@ -11,14 +11,9 @@
    ========================================================================== */
 
 html {
-    color: #fff;
+    color: #222;
     font-size: 1em;
     line-height: 1.4;
-    background: url(../img/bg.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
 
 /*
@@ -85,31 +80,6 @@ textarea {
     resize: vertical;
 }
 
-/*
- * Fonts
- */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-/*    font-family: 'Stint Ultra Expanded', cursive;*/
-    font-family: 'Nixie One', cursive;
-}
-
-p,
-a {
-/*    font-family: 'Pontano Sans', sans-serif;*/
-    font-family: 'Libre Baskerville', serif;
-}
-
-
-a {
-    color: #EFECCA;
-}
-
 /* ==========================================================================
    Browser Upgrade Prompt
    ========================================================================== */
@@ -147,12 +117,10 @@ a {
 
 /*
  * Hide visually and from screen readers:
- * http://juicystudio.com/article/screen-readers-display-none.php
  */
 
 .hidden {
     display: none !important;
-    visibility: hidden;
 }
 
 /*
@@ -225,14 +193,9 @@ a {
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
-    .content{
-        margin-left: auto;
-        margin-right: auto;
-    }
 }
 
 @media print,
-       (-o-min-device-pixel-ratio: 5/4),
        (-webkit-min-device-pixel-ratio: 1.25),
        (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
