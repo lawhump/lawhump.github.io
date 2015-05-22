@@ -13,6 +13,7 @@ $font-size-sm: 1.2em;
 $font-size-xs: 5em;
 
 $width-std: 50vw;
+$width-wide: 95vw;
 
 $padding-sm: 20px;
 $padding-lg: 40px;
@@ -350,13 +351,13 @@ section.closing {
 @media only screen and (max-width : 768px) {
     section.nutshell {
         p {
-            width: 100vw;    
+            width: $width-wide;    
         }
     }
     
     section.work {
         .container {
-            width: 100vw;    
+            width: $width-wide;
         }
     }
     
@@ -381,4 +382,11 @@ section.closing {
             font-size: $font-size-lg;    
         }
     }
+}
+
+/* iPhone6 */
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) { 
+
 }
