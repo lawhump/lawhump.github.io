@@ -54,6 +54,21 @@ a {
     color: $color-white;
 }
 
+.button {
+    width: $width-wide;
+    padding: 5px 10px;
+    color: $color-medium_darker;
+    text-transform: uppercase;
+    border: 1px solid $color-medium_darker;
+    
+    transition: all 0.5s ease-in-out;
+    
+    &:hover {
+        color: $color-white;
+        background-color: $color-medium_darker;
+    }
+}
+
 section.landing {
     margin: 0;
     padding: 0;
@@ -123,10 +138,38 @@ div.remainder {
     }
 }
 
+div.animated-divider {
+    width: 100vw;
+    height: auto;
+    padding: 0;
+    text-align: center;
+    
+    .container {
+        width: $width-std;
+        margin: 0 auto;
+        line-height: $line-height;
+        
+        div {
+            display: inline-block;
+            margin: 0 $padding_sm;
+        }
+    
+        .circle {
+            width: 10px;
+            height: 10px;
+            background: $color-medium_darker;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+        }
+    }
+}
+
 section.nutshell {
     text-align: center;
     color: $color-stone;
-    padding: $padding-lg 0;
+    padding-bottom: $padding-lg;
+//    padding: $padding-lg 0;
     line-height: $line-height;
     
     h3 {
@@ -387,6 +430,12 @@ section.closing {
 /* iPhone6 */
 @media only screen 
 and (min-device-width : 375px) 
-and (max-device-width : 667px) { 
-
+and (max-device-width : 667px) {
+    section.landing {
+        background: url(../img/path_iphone.jpeg) no-repeat center center fixed;
+    }
+    
+    section.personality {
+        background: url(../img/rocks-and-water.jpg) no-repeat center center fixed; 
+    }
 }

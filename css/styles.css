@@ -32,6 +32,19 @@ a {
   color: #fff; }
 
 /* line 57, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+.button {
+  width: 95vw;
+  padding: 5px 10px;
+  color: #D3D4AA;
+  text-transform: uppercase;
+  border: 1px solid #D3D4AA;
+  transition: all 0.5s ease-in-out; }
+  /* line 66, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+  .button:hover {
+    color: #fff;
+    background-color: #D3D4AA; }
+
+/* line 72, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
 section.landing {
   margin: 0;
   padding: 0;
@@ -45,7 +58,7 @@ section.landing {
   -o-background-size: cover;
   background-size: cover;
   text-align: center; }
-  /* line 73, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+  /* line 88, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
   section.landing h1 {
     margin: 0;
     padding: 0;
@@ -55,7 +68,7 @@ section.landing {
     letter-spacing: 0.2em;
     position: relative;
     top: 45%; }
-  /* line 87, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+  /* line 102, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
   section.landing h3 {
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
@@ -64,14 +77,14 @@ section.landing {
     position: relative;
     top: 50%; }
 
-/* line 98, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+/* line 113, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
 div.remainder {
   margin: 0;
   padding: 0;
   min-height: 10vh;
   max-height: 10vh;
   width: 100vw; }
-  /* line 106, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+  /* line 121, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
   div.remainder .continue {
     margin-top: 2.5vh;
     display: block;
@@ -82,33 +95,57 @@ div.remainder {
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     border-top: 40px solid #E7E9D1; }
-    /* line 119, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+    /* line 134, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
     div.remainder .continue.before, div.remainder .continue.after {
       content: "—";
       color: #E7E9D1; }
 
-/* line 126, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+/* line 141, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+div.animated-divider {
+  width: 100vw;
+  height: auto;
+  padding: 0;
+  text-align: center; }
+  /* line 147, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+  div.animated-divider .container {
+    width: 50vw;
+    margin: 0 auto;
+    line-height: 1.8; }
+    /* line 152, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+    div.animated-divider .container div {
+      display: inline-block;
+      margin: 0 20px; }
+    /* line 157, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+    div.animated-divider .container .circle {
+      width: 10px;
+      height: 10px;
+      background: #D3D4AA;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      border-radius: 5px; }
+
+/* line 168, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
 section.nutshell {
   text-align: center;
   color: #444444;
-  padding: 40px 0;
+  padding-bottom: 40px;
   line-height: 1.8; }
-  /* line 132, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+  /* line 175, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
   section.nutshell h3 {
     font-size: 2.4em; }
-  /* line 136, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+  /* line 179, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
   section.nutshell p {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
     width: 50vw;
     font-size: 1.2em; }
-  /* line 144, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+  /* line 187, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
   section.nutshell div {
     margin: 0 auto;
     width: 40%; }
 
-/* line 150, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+/* line 193, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
 section.platforms {
   margin: 0;
   padding: 20px 0;
@@ -117,7 +154,7 @@ section.platforms {
   overflow: auto;
   background-color: #FCFAE6;
   display: table; }
-  /* line 161, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+  /* line 204, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
   section.platforms .container {
     margin: 0;
     padding: 0;
@@ -126,14 +163,14 @@ section.platforms {
     text-align: center;
     -ms-text-justify: distribute-all-lines;
     text-justify: distribute-all-lines; }
-    /* line 171, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+    /* line 214, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
     section.platforms .container:after {
       content: '';
       width: 100%;
       display: inline-block;
       font-size: 0;
       line-height: 0; }
-    /* line 179, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+    /* line 222, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
     section.platforms .container div {
       text-align: center;
       width: 250px;
@@ -142,7 +179,7 @@ section.platforms {
       vertical-align: top;
       display: inline-block; }
 
-/* line 190, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+/* line 233, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
 section.personality {
   padding: 120px 0;
   width: 100vw;
@@ -153,16 +190,16 @@ section.personality {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
-  /* line 202, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+  /* line 245, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
   section.personality h2 {
     margin: 0;
     padding: 0;
     color: #fff; }
-  /* line 209, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+  /* line 252, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
   section.personality span {
     font-family: 'Raleway', sans-serif; }
 
-/* line 214, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+/* line 257, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
 div.work-prelude {
   width: 100vw;
   height: auto;
@@ -170,32 +207,32 @@ div.work-prelude {
   background-color: #D3D4AA;
   text-align: center;
   font-size: 1.8em; }
-  /* line 223, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+  /* line 266, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
   div.work-prelude h4 {
     font-family: 'Raleway', sans-serif;
     letter-spacing: 0.2em; }
 
-/* line 229, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+/* line 272, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
 section.work {
   width: 100vw;
   height: auto;
   text-align: center; }
-  /* line 234, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+  /* line 277, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
   section.work .container {
     width: 50vw;
     margin: 0 auto; }
-    /* line 238, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+    /* line 281, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
     section.work .container ul {
       list-style-type: none;
       padding: 0; }
-    /* line 243, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+    /* line 286, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
     section.work .container li {
       margin-bottom: 20px; }
-      /* line 246, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+      /* line 289, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
       section.work .container li a {
         color: #D3D4AA; }
 
-/* line 253, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+/* line 296, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
 div.cta {
   width: 100vw;
   height: auto;
@@ -203,37 +240,37 @@ div.cta {
   background-color: #444444;
   text-align: center;
   font-size: 2.4em; }
-  /* line 261, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+  /* line 304, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
   div.cta h3 {
     font-family: 'Open Sans', sans-serif;
     font-style: italic;
     font-weight: 300;
     color: #FCFAE6; }
 
-/* line 269, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+/* line 312, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
 section.contact {
   width: 100vw;
   height: auto;
   padding: 40px 0;
   text-align: center; }
-  /* line 275, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+  /* line 318, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
   section.contact .container {
     width: 50vw;
     margin: 0 auto;
     line-height: 1.8; }
-    /* line 280, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+    /* line 323, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
     section.contact .container h4 {
       font-size: 1.8em; }
-    /* line 284, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+    /* line 327, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
     section.contact .container h5 {
       font-size: 1.2em; }
-    /* line 288, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+    /* line 331, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
     section.contact .container .divider {
       padding: 20px 0; }
-    /* line 292, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+    /* line 335, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
     section.contact .container .divider div {
       display: inline-block; }
-    /* line 296, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+    /* line 339, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
     section.contact .container .triangle {
       width: 0;
       height: 0;
@@ -241,24 +278,24 @@ section.contact {
       border-right: 5px solid transparent;
       border-bottom: 10px solid #D3D4AA; }
 
-/* line 306, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+/* line 349, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
 section.closing {
   text-align: center;
   background-color: #444444; }
-  /* line 310, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+  /* line 353, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
   section.closing .links {
     position: relative;
     bottom: 0;
     padding: 20px 0; }
-    /* line 315, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+    /* line 358, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
     section.closing .links .link {
       padding: 0 22px;
       color: #FCFAE6; }
-  /* line 321, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+  /* line 364, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
   section.closing h5, section.closing h6 {
     color: #fff;
     font-weight: 300; }
-  /* line 326, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+  /* line 369, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
   section.closing h6 {
     padding: 20px 0; }
 
@@ -266,40 +303,49 @@ section.closing {
 /* Medium Devices, Desktops */
 /* For the landing */
 @media only screen and (max-width: 835px) {
-  /* line 344, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+  /* line 387, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
   section.landing h1 {
     top: 30%; }
  }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
-  /* line 353, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+  /* line 396, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
   section.nutshell p {
     width: 95vw; }
 
-  /* line 359, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+  /* line 402, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
   section.work .container {
     width: 95vw; }
 
-  /* line 364, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+  /* line 407, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
   div.cta {
     font-size: 1.8em; }
  }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
-  /* line 372, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+  /* line 415, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
   section.landing h1 {
     font-size: 3.6em; }
  }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
-  /* line 381, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+  /* line 424, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
   section.landing h1 {
     font-size: 2.4em; }
  }
 
 /* iPhone6 */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  /* line 434, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+  section.landing {
+    background: url(../img/path_iphone.jpeg) no-repeat center center fixed; }
+
+  /* line 438, /Users/lawrencehumphrey/Dev/newsite/css/styles.scss */
+  section.personality {
+    background: url(../img/rocks-and-water.jpg) no-repeat center center fixed; }
+ }
 
 /*# sourceMappingURL=styles.css.map */
