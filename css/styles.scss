@@ -54,6 +54,26 @@ a {
     color: $color-white;
 }
 
+.test {
+    width: 60px;
+    height: 60px;
+    
+//    .animated-triangle {
+//        stroke-dasharray: 100;
+//        stroke-dashoffset: 100;
+//        animation: dash 3s linear forwards;
+//    }
+//    
+//    @keyframes dash {
+//        from {
+//            stroke-dashoffset: 100;
+//        }
+//        to {
+//            stroke-dashoffset: 0;
+//        }
+//    }
+}
+
 .button {
     width: $width-wide;
     padding: 5px 10px;
@@ -247,6 +267,8 @@ section.personality {
         padding: 0;
         
         color: $color-white;
+        
+        width: 100%;
     }
     
     span {
@@ -314,7 +336,7 @@ section.contact {
     height: auto;
     padding: $padding-lg 0;
     text-align: center;
-    
+        
     .container {
         width: $width-std;
         margin: 0 auto;
