@@ -26,7 +26,7 @@ var animatePath = function() {
 }
 
 var slider = function() {
-    var interests = ["data visualization", "rock climbing", "the MEAN stack", "triangles", "cool css", "ecclectic music", "geometric design", "Radiolab", "Python", "adventuring", "dancing", "driving at night", "coffee", "meeting new people", "India Pale Ales", "Java", "being barefoot"];
+    var interests = ["data visualization", "rock climbing", "the MEAN stack", "triangles", "cool css", "eclectic music", "geometric design", "Radiolab", "Python", "adventuring", "dancing", "driving at night", "coffee", "meeting new people", "India Pale Ales", "Java", "being barefoot"];
     var curr = 1;
     console.log(interests.length);
 

@@ -1,3 +1,5 @@
+@import 'jeet/index';
+
 $color-white: #fff;
 $color-light: #FCFAE6;
 $color-medium: #E7E9D1;
@@ -57,21 +59,6 @@ a {
 .test {
     width: 60px;
     height: 60px;
-    
-//    .animated-triangle {
-//        stroke-dasharray: 100;
-//        stroke-dashoffset: 100;
-//        animation: dash 3s linear forwards;
-//    }
-//    
-//    @keyframes dash {
-//        from {
-//            stroke-dashoffset: 100;
-//        }
-//        to {
-//            stroke-dashoffset: 0;
-//        }
-//    }
 }
 
 .button {
@@ -81,7 +68,7 @@ a {
     text-transform: uppercase;
     border: 1px solid $color-medium_darker;
     
-    transition: all 0.5s ease-in-out;
+    transition: all 0.4s ease-in-out;
     
     &:hover {
         color: $color-white;
@@ -149,39 +136,46 @@ div.remainder {
         border-left: 20px solid transparent;
         border-right: 20px solid transparent;
         border-top: 40px solid $color-medium;
-        
-        &.before,
-        &.after, {
-            content: "—";
-            color: $color-medium;
-        }
     }
 }
 
 div.animated-divider {
+    margin: 0; padding: 0;
+
+    @keyframes wave {
+        0%   { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
     width: 100vw;
     height: auto;
     padding: 0;
     text-align: center;
     
+    .circle {
+        opacity: 1;
+        width: 10px;
+        height: 10px;
+        background: $color-medium_darker;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+    }
+
     .container {
         width: $width-std;
         margin: 0 auto;
         line-height: $line-height;
+        animation: wave 1s;
         
         div {
             display: inline-block;
             margin: 0 $padding_sm;
-        }
-    
-        .circle {
-            width: 10px;
-            height: 10px;
-            background: $color-medium_darker;
-            -moz-border-radius: 5px;
-            -webkit-border-radius: 5px;
-            border-radius: 5px;
-        }
+        } 
+
+        .one   { animation: wave 1s ease 2s; margin-left: 0; }
+        .two   { animation: wave 1s ease 2.33s; }
+        .three { animation: wave 1s ease 2.66s; }
     }
 }
 
@@ -189,7 +183,6 @@ section.nutshell {
     text-align: center;
     color: $color-stone;
     padding-bottom: $padding-lg;
-//    padding: $padding-lg 0;
     line-height: $line-height;
     
     h3 {
@@ -212,7 +205,7 @@ section.nutshell {
 
 section.platforms {
     margin: 0;
-    padding: $padding-sm 0;
+    padding: $padding-lg 0;
     width: 100vw;
     height: auto;
     overflow: auto;
@@ -278,7 +271,6 @@ section.personality {
 
 div.work-prelude {
     width: 100vw;
-    height: auto;
     padding: $padding-sm 0;
     background-color: $color-medium_darker;
     text-align: center;
@@ -293,24 +285,36 @@ div.work-prelude {
 
 section.work {
     width: 100vw;
-    height: auto;
     text-align: center;
-    
-    .container {
-        width: $width-std;
-        margin: 0 auto;
-        
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        
+
+    h5 {
+        font-size: 3rem;
+    }
+
+    .grid {
+        @include cf();
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
         li {
-            margin-bottom: 20px;
-            
-            a {
-                color: $color-medium_darker;    
+            @include span(1/3);
+
+            @media only screen and (max-width: 1200px) {
+                @include span(1/2);
             }
+
+            @media only screen and (max-width: 800px) {
+                @include stack();
+
+                &:nth-of-type(3) ~ li {
+                    display: none;
+                }
+            }
+        }
+
+        img {
+            width: 100%;
         }
     }
 }
@@ -318,7 +322,7 @@ section.work {
 div.cta {
     width: 100vw;
     height: auto;
-    padding: $padding-sm 0;
+    padding: 1.2*$padding-lg 0;
     background-color: $color-stone;
     text-align: center;
     font-size: $font-size-lg;
@@ -369,17 +373,26 @@ section.contact {
 }
 
 section.closing {
+    @keyframes brdr {
+        from { border: none; border-spacing: 0px; }
+        to { border: 1px solid $color-light; border-spacing: 2px; }
+    }
+
     text-align: center;
     background-color: $color-stone;
     
     .links {
         position: relative;
         bottom: 0;
-        padding: $padding-sm 0;
+        padding: 1.4*$padding-lg 0;
         
         .link {
             padding: 0 22px;
             color: $color-light;
+
+            &:hover {
+                animation: brdr 1s;
+            }
         }
     }
     
@@ -388,64 +401,154 @@ section.closing {
         font-weight: 300;
     }
     
-    h6 {
-        padding: $padding-sm 0;    
+    h6 { padding: $padding-sm 0; }
+}
+
+figure {
+    margin: 0;
+    position: relative;
+    min-width: 320px;
+    overflow: hidden;
+    background: #3085a3;
+    text-align: center;
+    // cursor: pointer;
+
+    img {
+        position: relative;
+        display: block;
+        height: auto;
+        width: 100%;
+        opacity: 0.8;
+    }
+
+    figcaption {
+        color: #000;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    figcaption::before,
+    figcaption::after {
+        pointer-events: none;
+    }
+
+    figcaption,
+    figcaption > a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Anchor will cover the whole item by default */
+    figcaption > a {
+        z-index: 1;
+        text-indent: 200%;
+        white-space: nowrap;
+        font-size: 0;
+        opacity: 0;
+    }
+
+    h5 {
+        word-spacing: -0.15em;
+        font-size: 4rem;
+        font-weight: 300;
+        margin: 0;
+        text-transform: uppercase;
+    }
+
+    p {
+        letter-spacing: 1px;
+        margin: 0;
+        padding: 0 20px;
+        text-align: center;
+        box-sizing: border-box;
+        width: 100%;
     }
 }
 
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
-    
-}
+.effect-sadie { 
+    figcaption::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        // background: linear-gradient(to bottom, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+        background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 75%);
+        content: '';
+        opacity: 0;
+        transform: translate3d(0,50%,0);
+    }
 
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
+    h5 {
+        position: absolute;
+        top: 45%;
+        left: 0;
+        width: 100%;
 
+        opacity: 0;
+
+        transition: transform 0.35s, color 0.35s, opacity 0.35s;
+        transform: translate3d(0,-50%,0);
+    }
+
+    figcaption::before, p {
+        transition: opacity 0.35s, transform 0.35s;
+    }
+
+    p {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding-bottom: 3rem ;
+        // min-width: 380px;
+        opacity: 0;
+        transform: translate3d(0,10px,0);
+    }
+
+    &:hover, &.hover {
+        h5 {
+            // color: #fff;
+            opacity: 1;
+            transform: translate3d(0,-50%,0) translate3d(0,-10px,0);
+        }
+
+        figcaption::before, p {
+            opacity: 1;
+            transform: translate3d(0,0,0);
+        }
+    }
 }
 
 /* For the landing */
 @media only screen and (max-width : 835px) {
     section.landing {
-        h1 {
-            top: 30%;
-        }
+        h1 { top: 30%; }
     }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
     section.nutshell {
-        p {
-            width: $width-wide;    
-        }
+        p { width: $width-wide; }
     }
     
-    section.work {
-        .container {
-            width: $width-wide;
-        }
-    }
-    
-    div.cta {
-        font-size: $font-size-md;
-    }
+    div.cta { font-size: $font-size-md; }
 }
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
     section.landing {
-        h1 {
-            font-size: $font-size-xl;    
-        }
+        h1 { font-size: $font-size-xl; }
     }
 }
 
 /* Custom, iPhone Retina */ 
 @media only screen and (max-width : 320px) {
     section.landing {
-        h1 {
-            font-size: $font-size-lg;    
-        }
+        h1 { font-size: $font-size-lg; }
     }
 }
 
