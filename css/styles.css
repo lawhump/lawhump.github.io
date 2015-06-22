@@ -307,6 +307,8 @@ section.nutshell {
       text-shadow: none;
       font-size: 4rem; }
   @media only screen and (max-width: 500px) {
+    section.nutshell .platforms {
+      display: none; }
     section.nutshell .container {
       float: left;
       clear: none;
@@ -415,7 +417,7 @@ section.contact {
       padding: 20px; }
     section.contact .container p {
       margin: 0 auto;
-      max-width: 400px; }
+      max-width: 380px; }
   section.contact > a {
     font-size: 1.8em;
     color: #E7E9D1;
