@@ -121,7 +121,8 @@ section.landing {
         letter-spacing: $letter-spacing;
         
         position: relative;
-        top: 35%;
+        top: 35vh;
+        // top: 35%;
     }
     
     h3 {
@@ -131,17 +132,20 @@ section.landing {
         
         color: $color-medium;
         position: relative;
-        top: 45%;
+        top: 45vh;
+        // top: 45%;
     }
 
     > div {
         position: relative;
-        top: 40%;
+        top: 40vh;
+        // top: 40%;
     }
 
     .links {
         position: relative;
-        top: 60%;
+        top: 60vh;
+        // top: 60%;
     }
 
     .anchor { color: $color-white; position: relative; top: 80px; }
@@ -473,10 +477,16 @@ figure {
 /* For the landing */
 @media only screen and (max-width : 835px) {
     section.landing {
-        h1 { top: 25%; }
-        > div { top: 30%; }
-        h3 { top: 35%; }
-        .links { top: 50% }
+        // h1 { top: 25%; }
+        // > div { top: 30%; }
+        // h3 { top: 35%; }
+        // .links { top: 50% }
+
+        min-height: 100vh;
+        h1 { top: 25vh; }
+        > div { top: 30vh; }
+        h3 { top: 35vh; }
+        .links { top: 50vh }
     }
 }
 
@@ -491,6 +501,10 @@ figure {
 @media only screen and (max-width : 480px) {
     section.landing {
         h1 { font-size: $font-size-xl; }
+        // h1 { top: 25%; }
+        // > div { top: 30%; }
+        // h3 { top: 35%; }
+        // .links { top: 50% }
     }
 }
 

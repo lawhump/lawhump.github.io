@@ -235,20 +235,20 @@ section.landing {
     font-size: 4.8em;
     letter-spacing: 0.2em;
     position: relative;
-    top: 35%; }
+    top: 35vh; }
   section.landing h3 {
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     color: #E7E9D1;
     position: relative;
-    top: 45%; }
+    top: 45vh; }
   section.landing > div {
     position: relative;
-    top: 40%; }
+    top: 40vh; }
   section.landing .links {
     position: relative;
-    top: 60%; }
+    top: 60vh; }
   section.landing .anchor {
     color: #fff;
     position: relative;
@@ -557,14 +557,16 @@ figure {
 
 /* For the landing */
 @media only screen and (max-width: 835px) {
-  section.landing h1 {
-    top: 25%; }
-  section.landing > div {
-    top: 30%; }
-  section.landing h3 {
-    top: 35%; }
-  section.landing .links {
-    top: 50%; } }
+  section.landing {
+    min-height: 100vh; }
+    section.landing h1 {
+      top: 25vh; }
+    section.landing > div {
+      top: 30vh; }
+    section.landing h3 {
+      top: 35vh; }
+    section.landing .links {
+      top: 50vh; } }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   section.nutshell p {
