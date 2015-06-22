@@ -583,12 +583,12 @@ figure {
   section.landing {
     min-height: 100vh; }
     section.landing h1 {
-      font-size: 1.2em;
-      top: 15%; }
+      font-size: 1.8em;
+      top: 18%; }
     section.landing > div {
-      top: 20%; }
+      top: 23%; }
     section.landing h3 {
-      top: 35%; }
+      top: 28%; }
     section.landing .links {
       top: 50%; }
     section.landing a:first-of-type {
