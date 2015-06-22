@@ -15,10 +15,11 @@ $font-size-sm: 1.2em;
 $font-size-xs: 5em;
 
 $width-std: 50vw;
-$width-wide: 95vw;
+$width-wide: 92.5vw;
 
 $padding-sm: 20px;
 $padding-lg: 40px;
+$padding-xl: 80px;
 
 $letter-spacing: 0.2em;
 $line-height: 1.8;
@@ -62,26 +63,43 @@ a {
 }
 
 .button {
-    width: $width-wide;
-    padding: 5px 10px;
-    color: $color-medium_darker;
+    padding: 20px 40px;
+    color: $color-white;
     text-transform: uppercase;
-    border: 1px solid $color-medium_darker;
+    border: 4px solid $color-white;
     
     transition: all 0.4s ease-in-out;
     
     &:hover {
-        color: $color-white;
-        background-color: $color-medium_darker;
+        // color: $color-medium_darker;
+        // border-color: $color-medium_darker;
     }
+}
+
+.triangle {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid $color-medium;
+}
+
+.rot-triangle {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid $color-medium;
 }
 
 section.landing {
     margin: 0;
     padding: 0;
-    min-height: 325px;
-    height: 90vh;
-    max-height: 90vh;
+    min-height: 900px;
+    height: 100vh;
+    max-height: 100vh;
     width: 100vw;
     
     background: url(../img/path.jpg) no-repeat center center fixed; 
@@ -103,7 +121,7 @@ section.landing {
         letter-spacing: $letter-spacing;
         
         position: relative;
-        top: 45%;
+        top: 35%;
     }
     
     h3 {
@@ -113,166 +131,89 @@ section.landing {
         
         color: $color-medium;
         position: relative;
-        top: 50%;
-    }
-}
-
-div.remainder {
-    margin: 0;
-    padding: 0;
-
-    min-height: 10vh;
-    max-height: 10vh;
-    width: 100vw;
-    
-    .continue {
-        margin-top: 2.5vh;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        
-        width: 0;
-        height: 0;
-        border-left: 20px solid transparent;
-        border-right: 20px solid transparent;
-        border-top: 40px solid $color-medium;
-    }
-}
-
-div.animated-divider {
-    margin: 0; padding: 0;
-
-    @keyframes wave {
-        0%   { opacity: 0; }
-        100% { opacity: 1; }
+        top: 45%;
     }
 
-    width: 100vw;
-    height: auto;
-    padding: 0;
-    text-align: center;
-    
-    .circle {
-        opacity: 1;
-        width: 10px;
-        height: 10px;
-        background: $color-medium_darker;
-        -moz-border-radius: 5px;
-        -webkit-border-radius: 5px;
-        border-radius: 5px;
+    > div {
+        position: relative;
+        top: 40%;
     }
 
-    .container {
-        width: $width-std;
-        margin: 0 auto;
-        line-height: $line-height;
-        animation: wave 1s;
-        
-        div {
-            display: inline-block;
-            margin: 0 $padding_sm;
-        } 
-
-        .one   { animation: wave 1s ease 2s; margin-left: 0; }
-        .two   { animation: wave 1s ease 2.33s; }
-        .three { animation: wave 1s ease 2.66s; }
+    .links {
+        position: relative;
+        top: 60%;
     }
+
+    .anchor { color: $color-white; position: relative; top: 80px; }
 }
 
 section.nutshell {
+    overflow-x: hidden;
     text-align: center;
     color: $color-stone;
-    padding-bottom: $padding-lg;
+    padding: 1.4*$padding-lg 0;
     line-height: $line-height;
     
     h3 {
         font-size: $font-size-lg;    
     }
+
+    h4 {
+        font-size: $font-size-sm;
+    }
     
     p {
-        display: inline-block;
-        margin-left: auto;
-        margin-right: auto;
-        width: $width-std;
+        margin: 0 auto;
+        width: $width-wide;
+        max-width: 800px;
         font-size: $font-size-sm;    
     }
     
+    .personality {
+        margin-bottom: 40px;
+    }
+
     div {
         margin: 0 auto;
         width: 40%;    
     }
-}
 
-section.platforms {
-    margin: 0;
-    padding: $padding-lg 0;
-    width: 100vw;
-    height: auto;
-    overflow: auto;
-    
-    background-color: $color-light;
-    display: table;
+    .platforms {
+        @include cf();
+        @include center(1000px);
+        padding: 40px 0;
+        
+        color: #111;
+    }
 
-    
     .container {
-        margin: 0;
-        padding: 0;
-        display: table-row;
-        width: $width-std;
-        
-        text-align: center;
-        -ms-text-justify: distribute-all-lines;
-        text-justify: distribute-all-lines;
-        
-        &:after {
-            content: '';
-            width: 100%;
-            display: inline-block;
-            font-size: 0;
-            line-height: 0    
-        }
-        
-        div {
-            text-align: center;
-            width: 250px;
-            padding: 5px 5vw;
-            height: auto;
-            vertical-align: top;
-            display: inline-block;
-        }
-    }
-}
+        @include col(1/4, $cycle: 4);
 
-section.personality {
-    padding: 3*$padding-lg 0;
-    width: 100vw;
-    height: auto;
-    text-align: center;
-    
-    background: url(../img/rocks-and-water.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    
-    h2 {
-        margin: 0;
-        padding: 0;
-        
-        color: $color-white;
-        
-        width: 100%;
+        text-align: center;
+
+        i {
+            text-shadow: none;
+            font-size: 4rem;
+        }
     }
-    
-    span {
-        font-family: 'Raleway', sans-serif;
+
+    @media only screen and (max-width: 500px) {
+        .container {
+            @include col(1/2, $uncycle: 4, $cycle: 2);
+
+            margin-bottom: 60px;
+        }
+    }
+
+    .additional {
+        margin-top: 20px;
     }
 }
 
 div.work-prelude {
     width: 100vw;
-    padding: $padding-sm 0;
-    background-color: $color-medium_darker;
+    padding: $padding-xl 0;
+    background-color: $color-medium;
     text-align: center;
 
     font-size: $font-size-md;
@@ -281,6 +222,8 @@ div.work-prelude {
         font-family: 'Raleway', sans-serif;
         letter-spacing: $letter-spacing;
     }
+
+    .darker { border-top: 20px solid $color-medium_darker; }
 }
 
 section.work {
@@ -338,70 +281,75 @@ div.cta {
 section.contact {
     width: 100vw;
     height: auto;
-    padding: $padding-lg 0;
+    padding: $padding-xl 0;
     text-align: center;
         
     .container {
-        width: $width-std;
+        min-width: $width-std;
         margin: 0 auto;
         line-height: $line-height;
         
+        h3 {
+            font-size: $font-size-lg;
+        }
+        
         h4 {
-            font-size: $font-size-md;
+            font-size: 1.2*$font-size-sm;  
+            padding-bottom: 10px;  
         }
         
-        h5 {
-            font-size: $font-size-sm;    
+        > div {
+            padding: $padding-sm;
         }
-        
-        .divider {
-            padding: $padding-sm 0;    
+
+        p {
+            margin: 0 auto;
+            max-width: 400px;
         }
-        
-        .divider div {
-            display: inline-block;
-        }
-        
-        .triangle {
-            width: 0;
-            height: 0;
-            border-left: 5px solid transparent;
-            border-right: 5px solid transparent;
-            border-bottom: 10px solid $color-medium_darker; 
-        }
+    }
+
+    > a {
+        font-size: $font-size-md;
+        color: $color-medium;
+        border-bottom: 5px solid $color-medium;
+    }
+
+    .links {
+        margin-top: $padding-lg;
+        @include cf();
+        @include center(600px);
+    }
+
+    .link {
+        @include col(1/5, $cycle: 5);
     }
 }
 
 section.closing {
-    @keyframes brdr {
-        from { border: none; border-spacing: 0px; }
-        to { border: 1px solid $color-light; border-spacing: 2px; }
-    }
-
+    position: relative;
+    height: 200px;
     text-align: center;
-    background-color: $color-stone;
-    
-    .links {
-        position: relative;
-        bottom: 0;
-        padding: 1.4*$padding-lg 0;
-        
-        .link {
-            padding: 0 22px;
-            color: $color-light;
+    background: url(../img/rocks-and-water.jpg) no-repeat top center / 1200px 300px; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;    
 
-            &:hover {
-                animation: brdr 1s;
-            }
-        }
-    }
-    
     h5, h6 {
         color: $color-white;
         font-weight: 300;
     }
     
     h6 { padding: $padding-sm 0; }
+
+    div { 
+        position: absolute; top: 60%; left: 50%; margin: 0 auto; 
+        -webkit-transform: translate(-50%, -50%);
+        -mos-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
 }
 
 figure {
@@ -525,7 +473,10 @@ figure {
 /* For the landing */
 @media only screen and (max-width : 835px) {
     section.landing {
-        h1 { top: 30%; }
+        h1 { top: 25%; }
+        > div { top: 30%; }
+        h3 { top: 35%; }
+        .links { top: 50% }
     }
 }
 
@@ -533,9 +484,7 @@ figure {
 @media only screen and (max-width : 768px) {
     section.nutshell {
         p { width: $width-wide; }
-    }
-    
-    div.cta { font-size: $font-size-md; }
+    }    
 }
 
 /* Extra Small Devices, Phones */ 
