@@ -97,7 +97,7 @@ a {
 section.landing {
     margin: 0;
     padding: 0;
-    min-height: 900px;
+    min-height: 550px;
     height: 100vh;
     max-height: 100vh;
     width: 100vw;
@@ -477,16 +477,11 @@ figure {
 /* For the landing */
 @media only screen and (max-width : 835px) {
     section.landing {
-        // h1 { top: 25%; }
-        // > div { top: 30%; }
-        // h3 { top: 35%; }
-        // .links { top: 50% }
-
-        min-height: 100vh;
-        h1 { top: 25vh; }
-        > div { top: 30vh; }
-        h3 { top: 35vh; }
-        .links { top: 50vh }
+        min-height: 900px;
+        h1 { top: 25%; }
+        > div { top: 30%; }
+        h3 { top: 35%; }
+        .links { top: 50% }
     }
 }
 
@@ -501,10 +496,6 @@ figure {
 @media only screen and (max-width : 480px) {
     section.landing {
         h1 { font-size: $font-size-xl; }
-        // h1 { top: 25%; }
-        // > div { top: 30%; }
-        // h3 { top: 35%; }
-        // .links { top: 50% }
     }
 }
 
@@ -515,15 +506,15 @@ figure {
     }
 }
 
-/* iPhone6 */
 @media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 667px) {
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
     section.landing {
-        background: url(../img/path_iphone.jpeg) no-repeat center center fixed;
-    }
-    
-    section.personality {
-        background: url(../img/rocks-and-water.jpg) no-repeat center center fixed; 
+        min-height: 100vh;
+        h1 { font-size: $font-size-sm; top: 15%;}
+        > div { top: 20%; }
+        h3 { top: 35%; }
+        .links { top: 50% }
+        a:first-of-type { padding: 15px 30px; }
     }
 }
