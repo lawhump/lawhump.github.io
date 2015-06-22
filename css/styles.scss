@@ -511,7 +511,7 @@ figure {
 /* Custom, iPhone Retina */ 
 @media only screen and (max-width : 320px) {
     section.landing {
-        h1 { font-size: $font-size-lg; }
+        h1 { font-size: $font-size-md; }
     }
 }
 
