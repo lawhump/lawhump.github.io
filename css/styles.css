@@ -489,7 +489,8 @@ section.contact {
     clear: none;
     width: 17.6%;
     margin-left: 0;
-    margin-right: 3%; }
+    margin-right: 3%;
+    color: #444444; }
     section.contact .link:nth-of-type(5n) {
       margin-right: 0;
       float: right; }

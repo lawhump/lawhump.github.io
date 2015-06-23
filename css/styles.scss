@@ -394,6 +394,7 @@ section.contact {
 
     .link {
         @include col(1/5, $cycle: 5);
+        color: $color-stone;
     }
 }
 
