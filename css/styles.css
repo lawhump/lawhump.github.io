@@ -622,30 +622,5 @@ figure {
 @media only screen and (max-width: 320px) {
   section.landing h1 {
     font-size: 1.8em; } }
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  section.landing {
-    min-height: 100vh; }
-    section.landing h1 {
-      font-size: 1.8em;
-      top: 18%; }
-    section.landing > div {
-      top: 23%; }
-    section.landing h3 {
-      top: 28%; }
-    section.landing .links {
-      top: 50%; }
-    section.landing a:first-of-type {
-      padding: 15px 30px; }
-    section.landing .triangle {
-      border-left: 5px solid transparent;
-      border-right: 5px solid transparent;
-      border-bottom: 10px solid #E7E9D1; }
-    section.landing .rot-triangle {
-      border-left: 5px solid transparent;
-      border-right: 5px solid transparent;
-      border-top: 10px solid #E7E9D1; }
-
-  section.contact p {
-    max-width: 95vw; } }
 
 /*# sourceMappingURL=styles.css.map */
