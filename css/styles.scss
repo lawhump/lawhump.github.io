@@ -54,6 +54,9 @@ section.nutshell {
         }
     }
 
+    .tad-smaller { font-size: 1em; }
+    .techs { max-width: 440px; }
+
     @media only screen and (max-width: 500px) {
         .platforms { display: none; }
         .container {

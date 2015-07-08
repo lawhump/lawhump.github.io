@@ -38,8 +38,8 @@ section.landing {
         
         position: relative;
         top: 35vh;
-        // top: 35%;
     }
+
     
     h3 {
         font-family: 'Raleway', sans-serif;
@@ -49,19 +49,24 @@ section.landing {
         color: $color-medium;
         position: relative;
         top: 45vh;
-        // top: 45%;
     }
 
+    // ugghhhhhh why did i do this
     > div {
         position: relative;
         top: 40vh;
-        // top: 40%;
     }
 
     .links {
         position: relative;
         top: 60vh;
-        // top: 60%;
+    }
+
+    @media only screen and (max-width: 835px) {
+        h1 { top: 20vh; }
+        > div { top: 25vh; }
+        h3 { top: 30vh; }
+        .links { top: 55vh; }
     }
 
     .anchor { color: $color-white; position: relative; top: 80px;}

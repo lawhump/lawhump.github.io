@@ -300,6 +300,15 @@ section.landing {
   section.landing .links {
     position: relative;
     top: 60vh; }
+  @media only screen and (max-width: 835px) {
+    section.landing h1 {
+      top: 20vh; }
+    section.landing > div {
+      top: 25vh; }
+    section.landing h3 {
+      top: 30vh; }
+    section.landing .links {
+      top: 55vh; } }
   section.landing .anchor {
     color: #fff;
     position: relative;
@@ -557,6 +566,10 @@ section.nutshell {
     section.nutshell .container i {
       text-shadow: none;
       font-size: 4rem; }
+  section.nutshell .tad-smaller {
+    font-size: 1em; }
+  section.nutshell .techs {
+    max-width: 440px; }
   @media only screen and (max-width: 500px) {
     section.nutshell .platforms {
       display: none; }
