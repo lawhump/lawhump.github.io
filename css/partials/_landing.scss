@@ -291,6 +291,11 @@ section.landing {
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) {
     section.landing {
+        h1 { top: 18%;}
+        > div { top: 23%; }
+        h3 { top: 28%; }
+        .links { top: 50% }
+        a:first-of-type { padding: 15px 30px; }
         max-height: 1024px;
         background: none;
         .big { display: block; }
@@ -304,6 +309,11 @@ section.landing {
   and (orientation: portrait) 
   and (-webkit-min-device-pixel-ratio: 1) {
     section.landing {
+        h1 { top: 18%;}
+        > div { top: 23%; }
+        h3 { top: 28%; }
+        .links { top: 50% }
+        a:first-of-type { padding: 15px 30px; }
         max-height: 1024px;
         background: none;
         .big { display: block; }
@@ -365,32 +375,4 @@ section.landing {
         background: none;
         .big { display: block; }
     }
-}
-
-/* ----------- HTC One ----------- */
-
-/* Portrait and Landscape */
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) {
-
-}
-
-/* Portrait */
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) 
-  and (orientation: portrait) {
-
-}
-
-/* Landscape */
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) 
-  and (orientation: landscape) {
-
 }
