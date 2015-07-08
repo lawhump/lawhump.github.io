@@ -594,7 +594,7 @@ section.nutshell {
     margin-top: 20px; }
 
 div.work-prelude {
-  width: 100vw;
+  width: 100%;
   padding: 80px 0;
   background-color: #E7E9D1;
   text-align: center;
@@ -605,6 +605,9 @@ div.work-prelude {
   div.work-prelude .darker {
     border-top: 20px solid #D3D4AA; }
 
+@media only screen and (max-width: 800px) {
+  div.work-prelude {
+    padding: 40px 0; } }
 section.work {
   width: 100vw;
   text-align: center; }
@@ -670,6 +673,7 @@ section.contact {
   text-align: center; }
   section.contact .container {
     min-width: 50vw;
+    width: 90%;
     margin: 0 auto;
     line-height: 1.8; }
     section.contact .container h3 {
@@ -860,6 +864,8 @@ figure {
       border-top: 10px solid #E7E9D1; }
 
   section.contact p {
-    max-width: 95vw; } }
+    max-width: 95vw; }
+  section.contact > a {
+    font-size: 1.6em; } }
 
 /*# sourceMappingURL=styles.css.map */

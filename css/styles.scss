@@ -72,7 +72,7 @@ section.nutshell {
 }
 
 div.work-prelude {
-    width: 100vw;
+    width: 100%;
     padding: $padding-xl 0;
     background-color: $color-medium;
     text-align: center;
@@ -85,6 +85,10 @@ div.work-prelude {
     }
 
     .darker { border-top: 20px solid $color-medium_darker; }
+}
+
+@media only screen and (max-width: 800px) {
+    div.work-prelude { padding: $padding-lg 0; }
 }
 
 section.work {
@@ -147,6 +151,7 @@ section.contact {
         
     .container {
         min-width: $width-std;
+        width: 90%;
         margin: 0 auto;
         line-height: $line-height;
         
@@ -261,5 +266,8 @@ and (max-device-width : 480px) {
         }
     }
 
-    section.contact { p { max-width: 95vw; } }
+    section.contact { 
+        p { max-width: 95vw; } 
+        > a { font-size: 1.6em; }
+    }
 }
