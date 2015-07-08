@@ -312,7 +312,7 @@ section.landing {
     section.landing h3 {
       top: 30vh; }
     section.landing .links {
-      top: 55vh; } }
+      top: 45vh; } }
   section.landing .anchor {
     color: #fff;
     position: relative;
@@ -832,6 +832,11 @@ figure {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  section.landing .links {
+    top: 50vh; }
+  section.landing .anchor {
+    top: 60px; }
+
   section.nutshell p {
     width: 92.5vw; } }
 /* Extra Small Devices, Phones */
@@ -857,6 +862,7 @@ figure {
     section.landing a:first-of-type {
       padding: 15px 30px; }
     section.landing .anchor {
+      top: 45px;
       display: inline; }
     section.landing .triangle {
       border-left: 5px solid transparent;

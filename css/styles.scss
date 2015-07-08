@@ -223,6 +223,11 @@ section.closing {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+    section.landing {
+        .links { top: 50vh; }
+        .anchor { top: 60px; }
+    }
+
     section.nutshell {
         p { width: $width-wide; }
     }    
@@ -252,7 +257,7 @@ and (max-device-width : 480px) {
         h3 { top: 28%; }
         .links { top: 50% }
         a:first-of-type { padding: 15px 30px; }
-        .anchor { display: inline; }
+        .anchor { top: 45px; display: inline; }
 
         .triangle { 
             border-left: 5px solid transparent;
