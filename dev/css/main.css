@@ -420,6 +420,26 @@ article {
   -o-animation: fadeIn 2s;
   /* Opera */ }
 
+@media only screen and (max-width: 1600px) {
+  html {
+    font-size: 52.5%; } }
+
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 48.5%; } }
+
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 52.5%; } }
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 52.5%; } }
+
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 52.5%; } }
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   html {
     font-size: 52.5%; } }
@@ -465,6 +485,10 @@ article {
     height: 15rem;
     width: 15rem; } }
 
+.portfolio {
+  overflow: auto;
+  position: relative; }
+
 .portfolio figure {
   position: relative;
   overflow: hidden;
@@ -472,7 +496,12 @@ article {
   margin: 0;
   background: #3085a3;
   text-align: center;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: height .3s ease-in-out; }
+
+@media all and (max-width: 992px) {
+  .portfolio figure {
+    height: 35rem; } }
 
 @media all and (max-width: 480px) {
   .portfolio figure {
@@ -634,7 +663,3 @@ body > section {
     float: none;
     height: auto;
     width: 100%; } }
-
-.portfolio {
-  overflow: auto;
-  position: relative; }

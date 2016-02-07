@@ -121,6 +121,11 @@
 
 // heavily influenced by https://github.com/codrops/HoverEffectIdeas
 
+.portfolio {
+	overflow: auto;
+	position: relative;
+}
+
 .portfolio figure {
 	position: relative;
 	overflow: hidden;
@@ -129,6 +134,13 @@
 	background: #3085a3;
 	text-align: center;
 	cursor: pointer;
+	transition: height .3s ease-in-out;
+}
+
+@media all and (max-width: 992px) {
+	.portfolio figure {
+	  height: 35rem;
+	}
 }
 
 @media all and (max-width: 480px) {

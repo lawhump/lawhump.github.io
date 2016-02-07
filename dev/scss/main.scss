@@ -1,6 +1,6 @@
 @import 'normalize';
 @import 'partials/vars';
-@import 'partials/_mixins';
+@import 'partials/mixins';
 @import 'partials/base';
 @import 'partials/me';
 @import 'partials/project';
@@ -25,10 +25,4 @@ body > section {
 		height: auto;
 		width: 100%;
 	}
-}
-
-
-.portfolio {
-	overflow: auto;
-	position: relative;
 }
