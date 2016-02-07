@@ -1,0 +1,24 @@
+.cta {
+	background-color: $accent-color;
+	border-radius: .2rem;
+	box-shadow: 0 .2rem .5rem 0 rgba(0, 0, 0, 0.26);
+	color: $white;
+	display: inline-block;
+	margin: 4.2rem auto 2.2rem auto;
+	padding: 2rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: box-shadow .5s cubic-bezier(.4, 0, .2, 1);
+	width: 9rem;
+
+	&.flat {
+		background-color: $white;
+		box-shadow: none;
+		color: $accent-color;
+	}
+
+	&:hover {
+		background-color: $accent-color-hover;
+		box-shadow: 0 .6rem .7rem 0 rgba(0, 0, 0, 0.26);
+	}
+}

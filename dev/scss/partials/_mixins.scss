@@ -1,0 +1,56 @@
+@mixin animation($name, $dur) {
+  animation: $name $dur;
+  -moz-animation: $name $dur; /* Firefox */
+  -webkit-animation: $name $dur; /* Safari and Chrome */
+  -o-animation: $name $dur; /* Opera */
+}
+
+@mixin bgImage ($url, $opacity) {
+	// background: url($url) no-repeat;
+    background-size: 100%;
+
+    background:
+	    /* top, transparent red */
+	    linear-gradient(
+	      rgba(0, 0, 0, $opacity),
+	      rgba(0, 0, 0, $opacity)
+	    ),
+	    /* bottom, image */
+    url($url);
+    background-position: center;
+}
+
+@mixin keyframes-fadeIn() {
+  @keyframes fadeIn {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+  }
+  @-moz-keyframes fadeIn { /* Firefox */
+      from {
+          opacity:0;
+      }
+      to {
+          opacity:1;
+      }
+  }
+  @-webkit-keyframes fadeIn { /* Safari and Chrome */
+      from {
+          opacity:0;
+      }
+      to {
+          opacity:1;
+      }
+  }
+  @-o-keyframes fadeIn { /* Opera */
+      from {
+          opacity:0;
+      }
+      to {
+          opacity: 1;
+      }
+  }
+}

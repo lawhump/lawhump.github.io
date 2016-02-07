@@ -1,0 +1,65 @@
+html { font-size: 62.5%; }
+body {
+	font-size: 1.6rem;
+	line-height: 2.56rem;
+	overflow: hidden;
+	text-rendering: optimizeLegibility;
+	width: 100vw;
+}
+
+html, body {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.3;
+}
+
+h2{
+	font-family: 'Montserrat', sans-serif;
+}
+
+p {
+	font-family: 'Hind', sans-serif;
+	font-weight: 300;
+}
+
+article {
+	margin: 0;
+	padding: 0;
+}
+
+.accent {
+	color: $accent-color;
+}
+
+
+.hidden {
+	display: none;
+	opacity: 0;
+}
+
+.show {
+	display: block;
+	opacity: 1;
+}
+
+@include keyframes-fadeIn;
+
+.fadeIn {
+	@include animation(fadeIn, 2s);
+}
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px) {
+    html { font-size: 52.5%; }
+}
