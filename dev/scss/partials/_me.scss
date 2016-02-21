@@ -22,20 +22,18 @@
 	img {
 		border-radius: 50%;
 		height: 20rem;
-		transition: height .5s ease-in-out,
-					width .5s ease-in-out;
+		transition: height .3s ease-in-out, width .3s ease-in-out;
 		width: 20rem;
 	}
 
 	.shrink {
-		height: 100px;
-		width: 100px;
+		height: 15rem;
+		width: 15rem;
 	}
 
 	.blurb {
 		margin-top: 1.4rem;
 		transition: opacity .4s ease-in-out;
-		// transition-delay: 1.7s;
 
 		h2 {
 			margin: 2rem 0 1.2rem 0;

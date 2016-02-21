@@ -466,11 +466,11 @@ article {
   .me img {
     border-radius: 50%;
     height: 20rem;
-    transition: height .5s ease-in-out, width .5s ease-in-out;
+    transition: height .3s ease-in-out, width .3s ease-in-out;
     width: 20rem; }
   .me .shrink {
-    height: 100px;
-    width: 100px; }
+    height: 15rem;
+    width: 15rem; }
   .me .blurb {
     margin-top: 1.4rem;
     transition: opacity .4s ease-in-out; }
@@ -654,14 +654,15 @@ figure.effect-chico:hover p {
   padding: 2rem;
   text-decoration: none;
   text-transform: uppercase;
+  transition: width 0.8s ease-in-out;
   white-space: nowrap; }
   .cta.flat {
-    animation: fade-to-flat 0.5s;
-    -moz-animation: fade-to-flat 0.5s;
+    animation: fade-to-flat 0.8s;
+    -moz-animation: fade-to-flat 0.8s;
     /* Firefox */
-    -webkit-animation: fade-to-flat 0.5s;
+    -webkit-animation: fade-to-flat 0.8s;
     /* Safari and Chrome */
-    -o-animation: fade-to-flat 0.5s;
+    -o-animation: fade-to-flat 0.8s;
     /* Opera */
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards; }

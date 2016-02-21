@@ -2,14 +2,14 @@ function changeButton() {
 	var cta		= document.querySelector('.cta');
 	cta.className += ' flat';
 	cta.innerHTML = 'Hit Me Up'
+	cta.setAttribute('href', 'mailto:lawrenceh1993@gmail.com');
 }
 
 function ctaHandler () {
-	console.log('bitchin');
 	var me 		= document.querySelector('.me img');
 	var blurb = document.querySelector('.blurb');
 
-	// me.className += 'shrink';
+	me.className += 'shrink';
 	$('.blurb').fadeIn({
 			'duration': 200,
 			'complete': changeButton
@@ -38,6 +38,4 @@ function showInterest () {
 	learnMore.onclick = ctaHandler;
 
 	showInterest();
-
-
 })();
