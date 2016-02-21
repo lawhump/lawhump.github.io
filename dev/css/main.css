@@ -472,7 +472,8 @@ article {
     height: 100px;
     width: 100px; }
   .me .blurb {
-    margin-top: 1.4rem; }
+    margin-top: 1.4rem;
+    transition: opacity .4s ease-in-out; }
     .me .blurb h2 {
       margin: 2rem 0 1.2rem 0; }
 
@@ -622,6 +623,26 @@ figure.effect-chico:hover p {
   .portfolio figure figcaption > a {
     width: 100vw; } }
 
+@-webkit-keyframes fade-to-flat {
+  0% {
+    background-color: #FF5252;
+    box-shadow: 0 0.2rem 0.5rem 0 rgba(0, 0, 0, 0.26);
+    color: #fff; }
+  100% {
+    background-color: #fff;
+    box-shadow: none;
+    color: #FF5252; } }
+
+@keyframes fade-to-flat {
+  0% {
+    background-color: #FF5252;
+    box-shadow: 0 0.2rem 0.5rem 0 rgba(0, 0, 0, 0.26);
+    color: #fff; }
+  100% {
+    background-color: #fff;
+    box-shadow: none;
+    color: #FF5252; } }
+
 .cta {
   background-color: #FF5252;
   border-radius: .2rem;
@@ -629,15 +650,21 @@ figure.effect-chico:hover p {
   color: #fff;
   display: inline-block;
   margin: 4.2rem auto 2.2rem auto;
+  overflow: hidden;
   padding: 2rem;
   text-decoration: none;
   text-transform: uppercase;
-  transition: box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  width: 9rem; }
+  white-space: nowrap; }
   .cta.flat {
-    background-color: #fff;
-    box-shadow: none;
-    color: #FF5252; }
+    animation: fade-to-flat 0.5s;
+    -moz-animation: fade-to-flat 0.5s;
+    /* Firefox */
+    -webkit-animation: fade-to-flat 0.5s;
+    /* Safari and Chrome */
+    -o-animation: fade-to-flat 0.5s;
+    /* Opera */
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards; }
   .cta:hover {
     background-color: #FF7373;
     box-shadow: 0 0.6rem 0.7rem 0 rgba(0, 0, 0, 0.26); }

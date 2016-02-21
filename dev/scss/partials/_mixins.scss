@@ -54,3 +54,58 @@
       }
   }
 }
+
+@mixin keyframes-button {
+  @-webkit-keyframes fade-to-flat {
+  	0% {
+  		background-color: $accent-color;
+  		box-shadow: 0 .2rem .5rem 0 rgba(0,0,0,.26);
+  		color: $white;
+  	}
+
+  	100% {
+  		background-color: $white;
+  		box-shadow: none;
+  		color: $accent-color;
+  	}
+  }
+  @-moz-keyframes fade-to-flat {
+  	0% {
+  		background-color: $accent-color;
+  		box-shadow: 0 .2rem .5rem 0 rgba(0,0,0,.26);
+  		color: $white;
+  	}
+
+  	100% {
+  		background-color: $white;
+  		box-shadow: none;
+  		color: $accent-color;
+  	}
+  }
+  @-o-keyframes fade-to-flat {
+  	0% {
+  		background-color: $accent-color;
+  		box-shadow: 0 .2rem .5rem 0 rgba(0,0,0,.26);
+  		color: $white;
+  	}
+
+  	100% {
+  		background-color: $white;
+  		box-shadow: none;
+  		color: $accent-color;
+  	}
+  }
+  @keyframes fade-to-flat {
+  	0% {
+  		background-color: $accent-color;
+  		box-shadow: 0 .2rem .5rem 0 rgba(0,0,0,.26);
+  		color: $white;
+  	}
+
+  	100% {
+  		background-color: $white;
+  		box-shadow: none;
+  		color: $accent-color;
+  	}
+  }
+}

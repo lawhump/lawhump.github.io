@@ -1,12 +1,20 @@
+function changeButton() {
+	var cta		= document.querySelector('.cta');
+	cta.className += ' flat';
+	cta.innerHTML = 'Hit Me Up'
+}
+
 function ctaHandler () {
 	console.log('bitchin');
 	var me 		= document.querySelector('.me img');
 	var blurb = document.querySelector('.blurb');
-	var cta		= document.querySelector('.cta');
 
 	// me.className += 'shrink';
-	blurb.className += ' show fadeIn';
-	cta.className += ' flat';
+	$('.blurb').fadeIn({
+			'duration': 200,
+			'complete': changeButton
+	});
+	$('.blurb').removeClass('hidden');
 }
 
 function showInterest () {
@@ -27,9 +35,11 @@ function showInterest () {
 
 (function() {
 	var learnMore = document.querySelector('.cta');
-	// learnMore.onclick = ctaHandler;
+	learnMore.onclick = ctaHandler;
 
 	showInterest();
+
+
 })();
 
 // Avoid `console` errors in browsers that lack a console.

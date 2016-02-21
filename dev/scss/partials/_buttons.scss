@@ -1,3 +1,5 @@
+@include keyframes-button();
+
 .cta {
 	background-color: $accent-color;
 	border-radius: .2rem;
@@ -5,16 +7,16 @@
 	color: $white;
 	display: inline-block;
 	margin: 4.2rem auto 2.2rem auto;
+	overflow: hidden;
 	padding: 2rem;
 	text-decoration: none;
 	text-transform: uppercase;
-	transition: box-shadow .5s cubic-bezier(.4, 0, .2, 1);
-	width: 9rem;
+  white-space: nowrap;
+	// width: 9rem;
 
 	&.flat {
-		background-color: $white;
-		box-shadow: none;
-		color: $accent-color;
+		@include animation(fade-to-flat, .5s);
+		animation-fill-mode: forwards;
 	}
 
 	&:hover {
