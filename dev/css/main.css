@@ -658,7 +658,7 @@ figure.effect-chico:hover img {
   padding: 2rem;
   text-decoration: none;
   text-transform: uppercase;
-  transition: width 0.8s ease-in-out;
+  transition: width 0.8s ease-in-out, box-shadow 0.8s ease-out;
   white-space: nowrap; }
   .cta.flat {
     animation: fade-to-flat 0.8s;
