@@ -131,7 +131,7 @@
 	overflow: hidden;
   height: 39rem;
   margin: 0;
-	background: #3085a3;
+	background: $dark-primary-color;
 	text-align: center;
 	cursor: pointer;
 	transition: height .3s ease-in-out;
@@ -160,7 +160,7 @@
 .portfolio figure figcaption {
 	color: #fff;
 	text-transform: uppercase;
-	font-size: 1.25em;
+	font-size: 1.25rem;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
@@ -204,7 +204,7 @@
 
 .portfolio figure p {
 	letter-spacing: 1px;
-	font-size: 68.5%;
+	font-size: 100%;
 }
 
 /* Individual effects */
@@ -224,9 +224,6 @@ figure.effect-chico:hover img {
 	opacity: 0.5;
 	-webkit-transform: scale(1);
 	transform: scale(1);
-}
-
-figure.effect-chico figcaption {
 }
 
 figure.effect-chico figcaption::before {
@@ -254,7 +251,7 @@ figure.effect-chico h2 {
 
 figure.effect-chico p {
 	margin: 0 auto;
-	max-width: 200px;
+	max-width: 250px;
   padding: calc(20% + 20px);
 	-webkit-transform: scale(1.5);
 	transform: scale(1.5);
@@ -265,6 +262,11 @@ figure.effect-chico:hover p {
 	opacity: 1;
 	-webkit-transform: scale(1);
 	transform: scale(1);
+}
+
+figure.effect-chico:hover img {
+	-webkit-filter: opacity(90%) blur(3px);
+	filter: opacity(90%) blur(3px);
 }
 
 @media screen and (max-width: 50em) {
