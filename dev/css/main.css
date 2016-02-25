@@ -456,7 +456,8 @@ article {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
       justify-content: center;
-  text-align: center; }
+  text-align: center;
+  width: 45%; }
   .me > *:not(.cta) {
     margin: 0 auto;
     max-width: 60rem;
@@ -488,7 +489,8 @@ article {
 
 .portfolio {
   overflow: auto;
-  position: relative; }
+  position: relative;
+  width: 55%; }
 
 .portfolio figure {
   position: relative;
@@ -684,8 +686,7 @@ figure.effect-chico:hover img {
 body > section {
   display: inline-block;
   float: left;
-  height: 100vh;
-  width: 50%; }
+  height: 100vh; }
 
 @media all and (max-width: 767px) {
   body {
