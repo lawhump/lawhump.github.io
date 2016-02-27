@@ -480,7 +480,8 @@ article {
 
 @media all and (max-width: 768px) {
   .me {
-    margin: 10% 0; } }
+    margin: 10% 0;
+    width: 100%; } }
 
 @media all and (max-width: 480px) {
   .me img {
@@ -491,6 +492,10 @@ article {
   overflow: auto;
   position: relative;
   width: 55%; }
+
+@media all and (max-width: 768px) {
+  .portfolio {
+    width: 100%; } }
 
 .portfolio figure {
   position: relative;

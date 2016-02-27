@@ -127,6 +127,12 @@
 	width: 55%;
 }
 
+@media all and (max-width: 768px) {
+	.portfolio {
+		width: 100%;
+	}
+}
+
 .portfolio figure {
 	position: relative;
 	overflow: hidden;
