@@ -31,10 +31,17 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest('dist/js'));
 });
 
-gulp.task('default', ['sass', 'scripts'], function() {
+gulp.task('webserver', function() {
+  gulp.src('./')
+    .pipe(server({
+      livereload: true,
+      open: true
+    }));
+});
+
+gulp.task('default', ['sass', 'scripts', 'webserver'], function() {
   gulp.watch(['dev/scss/**/*.scss'], ['sass']);
   gulp.watch('dev/js/*.js', ['scripts']);
 });
 
 gulp.task('build', ['sass', 'scripts']);
-

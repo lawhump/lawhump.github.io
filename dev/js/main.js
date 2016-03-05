@@ -23,8 +23,6 @@ function showInterest () {
 	"Ruby", "adventuring", "dancing", "driving at night", "coffee", "meeting new people",
 	"India Pale Ales", "Java", "being barefoot"];
 
-	console.log(interests);
-
 	var len = interests.length;
 	var index = Math.floor(Math.random() * (len + 1));
 	var interest = interests[index];
@@ -33,9 +31,14 @@ function showInterest () {
 	interestSpan.innerHTML = interest;
 }
 
+function fadeMeIn() {
+	document.querySelector('.me').style.opacity = 1;
+}
+
 (function() {
 	var learnMore = document.querySelector('.cta');
 	learnMore.onclick = ctaHandler;
 
+	fadeMeIn();
 	showInterest();
 })();

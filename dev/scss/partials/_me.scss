@@ -7,7 +7,9 @@
 	flex-flow: column nowrap;
 	-webkit-justify-content: center;
 	justify-content: center;
+	opacity: 0;
 	text-align: center;
+	transition: opacity .3s ease-out;
 	width: 45%;
 
   > *:not(.cta) {
@@ -39,6 +41,15 @@
 		h2 {
 			margin: 2rem 0 1.2rem 0;
 		}
+	}
+}
+
+.link {
+	text-decoration: none;
+	transition: color .3s ease-in-out;
+
+	&:hover i{
+		color: $accent-color;
 	}
 }
 

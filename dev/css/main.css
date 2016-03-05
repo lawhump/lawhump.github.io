@@ -456,7 +456,9 @@ article {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
       justify-content: center;
+  opacity: 0;
   text-align: center;
+  transition: opacity .3s ease-out;
   width: 45%; }
   .me > *:not(.cta) {
     margin: 0 auto;
@@ -477,6 +479,12 @@ article {
     transition: opacity .4s ease-in-out; }
     .me .blurb h2 {
       margin: 2rem 0 1.2rem 0; }
+
+.link {
+  text-decoration: none;
+  transition: color .3s ease-in-out; }
+  .link:hover i {
+    color: #FF5252; }
 
 @media all and (max-width: 768px) {
   .me {
