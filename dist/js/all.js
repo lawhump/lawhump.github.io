@@ -21,10 +21,12 @@ function showInterest () {
 	var interests = ["data visualizations", "rock climbing", "ideating",
 	"triangles", "eclectic music", "geometric design", "Radiolab",
 	"Ruby", "adventuring", "dancing", "driving at night", "coffee", "meeting new people",
-	"India Pale Ales", "Java", "being barefoot"];
+	"India Pale Ales", "Java", "being barefoot", "minimalism", "working with talented people",
+	"Orbit Wintermint gum", "taking public transportation", "playing with dogs",
+	"board games", "a tasteful romcom"];
 
 	var len = interests.length;
-	var index = Math.floor(Math.random() * (len + 1));
+	var index = Math.floor(Math.random() * (len));
 	var interest = interests[index];
 
 	var interestSpan = document.querySelector('.interest');
@@ -36,8 +38,8 @@ function fadeMeIn() {
 }
 
 (function() {
-	var learnMore = document.querySelector('.cta');
-	learnMore.onclick = ctaHandler;
+	document.querySelector('.cta').onclick = ctaHandler;
+	document.querySelector('.interest').onclick = showInterest;
 
 	fadeMeIn();
 	showInterest();
