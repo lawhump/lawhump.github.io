@@ -470,6 +470,7 @@ article {
     border-radius: 50%;
     height: 20rem;
     transition: height .3s ease-in-out, width .3s ease-in-out;
+    transition-delay: .1s;
     width: 20rem; }
   .me .shrink {
     height: 15rem;
@@ -671,12 +672,14 @@ figure.effect-chico:hover img {
   box-shadow: 0 0.2rem 0.5rem 0 rgba(0, 0, 0, 0.26);
   color: #fff;
   display: inline-block;
+  font-family: 'Hind', sans-serif;
   margin: 4.2rem auto 2.2rem auto;
+  max-width: 10rem;
   overflow: hidden;
   padding: 2rem;
   text-decoration: none;
   text-transform: uppercase;
-  transition: width 0.8s ease-in-out, box-shadow 0.8s ease-out;
+  transition: width 0.8s ease-in-out, box-shadow 0.4s ease-out;
   white-space: nowrap; }
   .cta.flat {
     animation: fade-to-flat 0.8s;

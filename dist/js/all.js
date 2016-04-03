@@ -9,6 +9,8 @@ function ctaHandler () {
 	var me 		= document.querySelector('.me img');
 	var blurb = document.querySelector('.blurb');
 
+	// TODO animate me first, setTimeout for the blurb
+
 	me.className += 'shrink';
 	$('.blurb').fadeIn({
 			'duration': 200,

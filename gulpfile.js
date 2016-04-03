@@ -5,6 +5,7 @@ var cssnano = require('gulp-cssnano');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 var server = require('gulp-webserver');
+var imagemin = require('gulp-imagemin');
 
 
 // Concatenate and compile SCSS
@@ -31,6 +32,16 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest('dist/js'));
 });
 
+
+gulp.task('images', () => {
+	return gulp.src('dev/img/**', {base: 'dev/img'})
+		.pipe(imagemin({
+			progressive: true,
+			svgoPlugins: [{removeViewBox: false}]
+		}))
+		.pipe(gulp.dest('dist/img'));
+});
+
 gulp.task('webserver', function() {
   gulp.src('./')
     .pipe(server({
@@ -39,7 +50,7 @@ gulp.task('webserver', function() {
     }));
 });
 
-gulp.task('default', ['sass', 'scripts', 'webserver'], function() {
+gulp.task('default', ['sass', 'scripts', 'images', 'webserver'], function() {
   gulp.watch(['dev/scss/**/*.scss'], ['sass']);
   gulp.watch('dev/js/*.js', ['scripts']);
 });

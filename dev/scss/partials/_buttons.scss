@@ -8,12 +8,14 @@ $animation-dur: .8s;
 	box-shadow: 0 .2rem .5rem 0 rgba(0, 0, 0, 0.26);
 	color: $white;
 	display: inline-block;
+	font-family: 'Hind', sans-serif;
 	margin: 4.2rem auto 2.2rem auto;
+	max-width: 10rem;
 	overflow: hidden;
 	padding: 2rem;
 	text-decoration: none;
 	text-transform: uppercase;
-	transition: width $animation-dur ease-in-out, box-shadow $animation-dur ease-out;
+	transition: width $animation-dur ease-in-out, box-shadow .4s ease-out;
   white-space: nowrap;
 
 	&.flat {
