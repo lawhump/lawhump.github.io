@@ -1,3 +1,13 @@
+var interests = ["data visualizations", "rock climbing", "ideating",
+"triangles", "eclectic music", "geometric design", "Radiolab",
+"Ruby", "adventuring", "dancing", "driving at night", "coffee", "meeting new people",
+"India Pale Ales", "Java", "being barefoot", "minimalism", "working with talented people",
+"Orbit Wintermint gum", "taking public transportation", "playing with dogs",
+"board games", "a tasteful romcom"];
+
+var len = interests.length;
+var index = Math.floor(Math.random() * (len));
+
 function changeButton() {
 	var cta		= document.querySelector('.cta');
 	cta.className += ' flat';
@@ -20,19 +30,11 @@ function ctaHandler () {
 }
 
 function showInterest () {
-	var interests = ["data visualizations", "rock climbing", "ideating",
-	"triangles", "eclectic music", "geometric design", "Radiolab",
-	"Ruby", "adventuring", "dancing", "driving at night", "coffee", "meeting new people",
-	"India Pale Ales", "Java", "being barefoot", "minimalism", "working with talented people",
-	"Orbit Wintermint gum", "taking public transportation", "playing with dogs",
-	"board games", "a tasteful romcom"];
-
-	var len = interests.length;
-	var index = Math.floor(Math.random() * (len));
 	var interest = interests[index];
 
 	var interestSpan = document.querySelector('.interest');
 	interestSpan.innerHTML = interest;
+	index = (index+1)%len;
 }
 
 function fadeMeIn() {

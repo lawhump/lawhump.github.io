@@ -383,12 +383,24 @@ p {
   font-family: 'Hind', sans-serif;
   font-weight: 300; }
 
+a:not(.cta) {
+  border-bottom: 1px solid rgba(255, 82, 82, 0);
+  color: #FF5252;
+  text-decoration: none;
+  transition: border-bottom .3s ease-in-out; }
+  a:not(.cta):hover {
+    border-bottom: 1px solid #ff5252; }
+
 article {
   margin: 0;
   padding: 0; }
 
 .accent {
-  color: #FF5252; }
+  border-bottom: 1px solid rgba(255, 82, 82, 0);
+  color: #FF5252;
+  transition: border-bottom .3s ease-in-out; }
+  .accent:hover {
+    border-bottom: 1px solid #ff5252; }
 
 .hidden {
   display: none;
