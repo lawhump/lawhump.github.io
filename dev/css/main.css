@@ -459,62 +459,6 @@ article {
   html {
     font-size: 52.5%; } }
 
-.me {
-  background-color: #fff;
-  color: #455A64;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: column nowrap;
-  -ms-flex-flow: column nowrap;
-      flex-flow: column nowrap;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-      justify-content: center;
-  opacity: 0;
-  text-align: center;
-  transition: opacity .3s ease-out;
-  width: 45%; }
-  .me > *:not(.cta) {
-    margin: 0 auto;
-    max-width: 60rem;
-    width: 90%; }
-  .me .elevate {
-    padding-top: 7vh; }
-  .me img {
-    border-radius: 50%;
-    height: 20rem;
-    transition: height .3s ease-in-out, width .3s ease-in-out;
-    transition-delay: .1s;
-    width: 20rem; }
-  .me .shrink {
-    height: 15rem;
-    width: 15rem; }
-  .me .blurb {
-    margin-top: 1.4rem;
-    transition: opacity .4s ease-in-out; }
-    .me .blurb h2 {
-      margin: 2rem 0 1.2rem 0; }
-
-.interest {
-  cursor: pointer; }
-
-.link {
-  text-decoration: none;
-  transition: color .3s ease-in-out; }
-  .link:hover i {
-    color: #FF5252; }
-
-@media all and (max-width: 768px) {
-  .me {
-    margin: 10% 0;
-    width: 100%; } }
-
-@media all and (max-width: 480px) {
-  .me img {
-    height: 15rem;
-    width: 15rem; } }
-
 .portfolio {
   overflow: auto;
   position: relative;
