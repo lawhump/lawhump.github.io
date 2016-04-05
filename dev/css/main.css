@@ -548,8 +548,8 @@ article {
           -ms-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%); }
     .portfolio figure:hover img {
-      -webkit-filter: blur(2px) grayscale(70%) brightness(50%);
-      filter: blur(2px) grayscale(70%) brightness(50%);
+      -webkit-filter: contrast(115%) grayscale(70%) brightness(50%);
+      filter: contrast(115%) grayscale(70%) brightness(50%);
       -webkit-transform: scale(1.05);
       -ms-transform: scale(1.05);
           transform: scale(1.05); }
