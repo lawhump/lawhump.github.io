@@ -524,7 +524,7 @@ article {
     backface-visibility: hidden;
     color: #fff;
     font-weight: 300;
-    height: 45rem;
+    height: 51rem;
     letter-spacing: .1rem;
     margin: 0;
     overflow: hidden;
@@ -532,7 +532,8 @@ article {
     position: relative;
     text-align: center;
     text-transform: uppercase;
-    transition: height .3s ease-out; }
+    transition: height .3s ease-out;
+    width: 100%; }
     .portfolio figure:before {
       opacity: 0; }
     .portfolio figure:hover:before {
@@ -549,7 +550,7 @@ article {
     .portfolio figure:hover img {
       -webkit-filter: blur(2px) grayscale(70%) brightness(50%);
       filter: blur(2px) grayscale(70%) brightness(50%);
-      -webkit-transform: scale(1.1);
+      -webkit-transform: scale(1.05);
       -ms-transform: scale(1.05);
           transform: scale(1.05); }
   .portfolio figcaption {
@@ -575,15 +576,11 @@ article {
 
 @media all and (max-width: 1600px) {
   .portfolio figure {
-    height: 42rem; } }
+    height: 51rem; } }
 
 @media all and (max-width: 1200px) {
   .portfolio figure {
-    height: 40rem; } }
-
-@media all and (max-width: 992px) {
-  .portfolio figure {
-    height: 35rem; } }
+    height: 46rem; } }
 
 @media all and (max-width: 768px) {
   .portfolio {
