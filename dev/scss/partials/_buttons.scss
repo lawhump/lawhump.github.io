@@ -15,7 +15,7 @@ $animation-dur: .8s;
 	padding: 2rem;
 	text-decoration: none;
 	text-transform: uppercase;
-	transition: width $animation-dur ease-in-out, box-shadow .4s ease-out, background-color .3 ease-out;
+	transition: width $animation-dur ease-in-out, box-shadow .4s ease-out, background-color .3s ease-out;
   white-space: nowrap;
 
 	&.flat {
