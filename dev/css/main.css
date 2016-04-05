@@ -694,7 +694,7 @@ figure.effect-chico:hover img {
   padding: 2rem;
   text-decoration: none;
   text-transform: uppercase;
-  transition: width 0.8s ease-in-out, box-shadow 0.4s ease-out;
+  transition: width 0.8s ease-in-out, box-shadow 0.4s ease-out, background-color 0.3 ease-out;
   white-space: nowrap; }
   .cta.flat {
     animation: fade-to-flat 0.8s;
@@ -707,7 +707,7 @@ figure.effect-chico:hover img {
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards; }
   .cta:hover {
-    background-color: #FF7373;
+    background-color: #E54A4A;
     box-shadow: 0 0.6rem 0.7rem 0 rgba(0, 0, 0, 0.26); }
 
 .me .links {
@@ -716,6 +716,12 @@ figure.effect-chico:hover img {
     margin-right: .8rem; }
   .me .links i {
     color: #455a64; }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .me .links a {
+    font-size: 115%; }
+  .me .links a:not(:last-child) {
+    margin-right: 1.8rem; } }
 
 body > section {
   display: inline-block;
