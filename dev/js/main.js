@@ -3,7 +3,8 @@ var interests = ["data visualizations", "rock climbing", "ideating",
 "Ruby", "adventuring", "dancing", "driving at night", "coffee", "meeting new people",
 "India Pale Ales", "Java", "being barefoot", "minimalism", "working with talented people",
 "Orbit Wintermint gum", "taking public transportation", "playing with dogs",
-"board games", "a tasteful romcom"];
+"board games", "a tasteful romcom", "browsing Dribbble", "ice skating",
+"oatmeal for breakfast", "lending a helping hand"];
 
 var len = interests.length;
 var index = Math.floor(Math.random() * (len));
