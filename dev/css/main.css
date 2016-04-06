@@ -549,8 +549,8 @@ article {
           -ms-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%); }
     .portfolio figure:hover img {
-      -webkit-filter: contrast(115%) grayscale(70%) brightness(50%);
-      filter: contrast(115%) grayscale(70%) brightness(50%); }
+      -webkit-filter: contrast(115%) grayscale(70%) brightness(30%);
+      filter: contrast(115%) grayscale(70%) brightness(30%); }
   .portfolio figcaption {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
