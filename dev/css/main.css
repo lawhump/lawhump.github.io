@@ -523,6 +523,7 @@ article {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     color: #fff;
+    font-size: 2rem;
     font-weight: 300;
     height: 51rem;
     letter-spacing: .1rem;
@@ -549,10 +550,7 @@ article {
               transform: translate(-50%, -50%); }
     .portfolio figure:hover img {
       -webkit-filter: contrast(115%) grayscale(70%) brightness(50%);
-      filter: contrast(115%) grayscale(70%) brightness(50%);
-      -webkit-transform: scale(1.05);
-      -ms-transform: scale(1.05);
-          transform: scale(1.05); }
+      filter: contrast(115%) grayscale(70%) brightness(50%); }
   .portfolio figcaption {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
