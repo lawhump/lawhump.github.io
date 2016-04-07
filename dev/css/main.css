@@ -588,11 +588,11 @@ article {
 
 @media all and (max-width: 480px) {
   .portfolio figure {
-    height: 40rem; } }
+    height: 33rem; } }
 
 @media all and (max-width: 320px) {
   .portfolio figure {
-    height: 36rem; } }
+    height: 31rem; } }
 
 @-webkit-keyframes fade-to-flat {
   0% {
