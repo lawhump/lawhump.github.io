@@ -9,6 +9,18 @@ var interests = ["data visualizations", "rock climbing", "ideating",
 var len = interests.length;
 var index = Math.floor(Math.random() * (len));
 
+var currDevice = document.querySelector('.right .selected');
+var address = document.querySelector('.address');
+var iframe = document.getElementById('iframe');
+var dropdown = document.querySelector('.dropdown');
+var selectedProj;
+// var selectedProj = dropdown.querySelector('.selected');
+var currentDesc;
+// var currentDesc = document.querySelector('.descriptions .' + selectedProj.dataset.project);
+
+var tabletWidth = 0.8*1280 + 30;
+var laptopWidth = 0.8*768 + 30;
+
 function changeButton() {
 	var cta		= document.querySelector('.cta');
 	cta.className += ' flat';
@@ -39,7 +51,54 @@ function showInterest () {
 }
 
 function fadeMeIn() {
-	document.querySelector('.me').style.opacity = 1;
+	document.querySelector('.me').classList.add('fadeIn');
+}
+
+function showMarkup(data) {
+	document.querySelector('body').innerHTML += data;
+	console.log(data);
+}
+
+function getMarkup(url, callback) {
+  var xmlHttp = new XMLHttpRequest();
+  xmlHttp.onreadystatechange = function() {
+    if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+      callback(xmlHttp.responseText);
+    }
+  }
+  xmlHttp.open('GET', url, true); // true for asynchronous
+  xmlHttp.send(null);
+}
+
+function resizeDevice(w) {
+  var width = w;
+
+  var phone = document.querySelector('.right .fa-mobile');
+  var tablet = document.querySelector('.right .fa-tablet');
+  var selected = document.querySelector('.right .selected');
+
+  if(width < 1300) {
+    if(width < 1030) {
+      selected.classList.remove('selected');
+      phone.classList.add('selected');
+
+      var iframeContainer = document.querySelector('.iframe-container .container');
+      iframeContainer.classList.remove('tablet');
+      iframeContainer.classList.add('phone');
+
+      currDevice = phone;
+    }
+    else {
+      selected.classList.remove('selected');
+      tablet.classList.add('selected');
+
+      var iframeContainer = document.querySelector('.iframe-container .container');
+      iframeContainer.classList.remove('laptop');
+      iframeContainer.classList.add('tablet');
+
+      currDevice = tablet;
+    }
+  }
 }
 
 (function() {
@@ -48,4 +107,79 @@ function fadeMeIn() {
 
 	fadeMeIn();
 	showInterest();
+
+	resizeDevice(window.outerWidth);
+
+	document.querySelector('.alert').classList.add('show');
 })();
+
+
+document.querySelector(".portfolio").addEventListener("click", function(e) {
+	if(e.target && e.target.nodeName == "IMG") {
+		var me = document.querySelector('.me');
+		var portfolio = document.querySelector('.portfolio');
+
+		// change iframe src
+		iframe.src = e.target.dataset.projectUrl;
+		// add value to input
+		var visibleAddress = e.target.dataset.projectUrl.split('http://')[1];
+    address.value = visibleAddress;
+		// show right description
+		selectedProj = dropdown.querySelector('[data-project="'+e.target.dataset.name+'"]');
+		selectedProj.classList.add('selected');
+		currentDesc = document.querySelector('.descriptions .' + e.target.dataset.name);
+    currentDesc.classList.add('fadeIn');
+		currentDesc.removeAttribute('hidden');
+
+		document.querySelector('.project-page-wrapper').classList.add('show');
+		document.querySelector('body').classList.add('noscroll');
+	}
+});
+
+document.querySelector(".top-bar .right").addEventListener("click", function(e) {
+	if(e.target && e.target.nodeName == "I") {
+    var iframeContainer = document.querySelector('.'+currDevice.dataset.device);
+    currDevice.classList.remove('selected');
+    e.target.classList.add('selected');
+    iframeContainer.classList.remove(currDevice.dataset.device);
+    iframeContainer.classList.add(e.target.dataset.device);
+    currDevice = e.target;
+	}
+});
+
+document.querySelector(".dropdown").addEventListener("click", function(e) {
+	if(e.target && e.target.nodeName == "LI") {
+    selectedProj.classList.remove('selected');
+    e.target.classList.add('selected');
+    selectedProj = e.target;
+    var visibleAddress = e.target.dataset.url.split('http://')[1];
+    address.value = visibleAddress;
+    iframe.src = e.target.dataset.url;
+
+    currentDesc.classList.add('fadeOut');
+    currentDesc.setAttribute('hidden', '');
+
+    currentDesc = document.querySelector('.descriptions .' + e.target.dataset.project);
+    currentDesc.classList.add('fadeIn');
+    currentDesc.removeAttribute('hidden');
+	}
+});
+
+document.querySelector(".left button").addEventListener("click", function(e) {
+	document.querySelector('.project-page-wrapper').classList.remove('show');
+	document.querySelector('body').classList.remove('noscroll');
+});
+
+document.querySelector(".alert .dismiss").addEventListener("click", function(e) {
+	// console.log(this);
+	this.parentNode.classList.remove("show");
+});
+
+window.onresize = function(e) {
+	resizeDevice(e.target.outerWidth);
+};
+
+// $("input:text").focus(function() { $(this).select(); } );
+document.querySelector('.address').addEventListener('focus', function(e) {
+  console.log(e);
+});

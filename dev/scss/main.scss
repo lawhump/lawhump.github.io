@@ -6,19 +6,19 @@
 @import 'partials/project';
 @import 'partials/buttons';
 @import 'partials/links';
+@import 'partials/projectpage';
 
-body > section {
-	display: inline-block;
+.home > section {
 	float: left;
 	height: 100vh;
 }
 
 @media all and (max-width: 767px) {
-	body {
+	.home {
 		overflow: auto;
 	}
 
-	body > section {
+	.home > section {
 		display: block;
 		float: none;
 		height: auto;
