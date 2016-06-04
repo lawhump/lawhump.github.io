@@ -46,7 +46,7 @@
       display: block;
     }
 
-    .fa {
+    .fa-angle-down {
       transform: rotate(-180deg);
     }
   }
@@ -85,6 +85,14 @@
 
   [data-project="frank"]:hover {
     background-color: $color-frank;
+  }
+
+  [data-project="mcplanr"]:hover {
+    background-color: $color-mcplanr;
+  }
+
+  [data-project="neutral"]:hover {
+    background-color: $color-neutral;
   }
 
   [data-project="oldsite"]:hover {

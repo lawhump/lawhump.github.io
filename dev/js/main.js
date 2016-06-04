@@ -121,6 +121,9 @@ document.querySelector(".portfolio").addEventListener("click", function(e) {
 
 		// change iframe src
 		iframe.src = e.target.dataset.projectUrl;
+
+    document.querySelector('.overlay').classList.add('active');
+
 		// add value to input
 		var visibleAddress = e.target.dataset.projectUrl.split('http://')[1];
     address.value = visibleAddress;
@@ -168,6 +171,8 @@ document.querySelector(".dropdown").addEventListener("click", function(e) {
 document.querySelector(".left button").addEventListener("click", function(e) {
 	document.querySelector('.project-page-wrapper').classList.remove('show');
 	document.querySelector('body').classList.remove('noscroll');
+
+  document.querySelector('.overlay').classList.remove('active');
 });
 
 document.querySelector(".alert .dismiss").addEventListener("click", function(e) {
