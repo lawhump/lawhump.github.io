@@ -238,66 +238,70 @@ iframe {
     text-align: left;
   }
 
+  .full-site {
+    padding-bottom: 3px;
+  }
+
   .illicit .full-site {
     color: $color-illicit;
     &:hover {
-      border-bottom: 2px solid rgba($color-illicit, 1);
+      border-bottom: 1px solid rgba($color-illicit, 1);
     }
   }
 
   .nowplaying .full-site {
     color: $color-nowplaying;
     &:hover {
-      border-bottom: 2px solid rgba($color-nowplaying, 1);
+      border-bottom: 1px solid rgba($color-nowplaying, 1);
     }
   }
 
   .map .full-site {
     color: $color-map;
     &:hover {
-      border-bottom: 2px solid rgba($color-map, 1);
+      border-bottom: 1px solid rgba($color-map, 1);
     }
   }
 
   .brewskies .full-site {
     color: $color-brewskies;
     &:hover {
-      border-bottom: 2px solid rgba($color-brewskies, 1);
+      border-bottom: 1px solid rgba($color-brewskies, 1);
     }
   }
 
   .maelstrom .full-site {
     color: $color-maelstrom;
     &:hover {
-      border-bottom: 2px solid rgba($color-maelstrom, 1);
+      border-bottom: 1px solid rgba($color-maelstrom, 1);
     }
   }
 
   .frank .full-site {
     color: $color-frank;
     &:hover {
-      border-bottom: 2px solid rgba($color-frank, 1);
+      border-bottom: 1px solid rgba($color-frank, 1);
     }
   }
 
   .mcplanr .full-site {
     color: $color-mcplanr;
     &:hover {
-      border-bottom: 2px solid rgba($color-mcplanr, 1);
+      border-bottom: 1px solid rgba($color-mcplanr, 1);
     }
   }
 
   .neutral .full-site {
     color: $color-neutral;
     &:hover {
-      border-bottom: 2px solid rgba($color-neutral, 1);
+      border-bottom: 1px solid rgba($color-neutral, 1);
     }
   }
 
   .oldsite .full-site {
     color: $color-oldsite;
     &:hover {
-      border-bottom: 2px solid rgba($color-oldsite, 1);
+      border-bottom: 1px solid rgba($color-oldsite, 1);
     }
   }
 

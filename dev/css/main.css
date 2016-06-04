@@ -837,6 +837,20 @@ article {
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards; }
 
+.dropdown:hover .fade-8,
+.dropdown h4:hover .fade-8 {
+  -webkit-animation: 0.15s ease-out 0.26s fadeIn;
+  animation: 0.15s ease-out 0.26s fadeIn;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+
+.dropdown:hover .fade-9,
+.dropdown h4:hover .fade-9 {
+  -webkit-animation: 0.15s ease-out 0.29s fadeIn;
+  animation: 0.15s ease-out 0.29s fadeIn;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+
 .top-bar {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1046,42 +1060,44 @@ iframe {
     text-align: right; }
   .descriptions .right {
     text-align: left; }
+  .descriptions .full-site {
+    padding-bottom: 3px; }
   .descriptions .illicit .full-site {
     color: #000; }
     .descriptions .illicit .full-site:hover {
-      border-bottom: 2px solid black; }
+      border-bottom: 1px solid black; }
   .descriptions .nowplaying .full-site {
     color: #2185C5; }
     .descriptions .nowplaying .full-site:hover {
-      border-bottom: 2px solid #2185c5; }
+      border-bottom: 1px solid #2185c5; }
   .descriptions .map .full-site {
     color: #F7685C; }
     .descriptions .map .full-site:hover {
-      border-bottom: 2px solid #f7685c; }
+      border-bottom: 1px solid #f7685c; }
   .descriptions .brewskies .full-site {
     color: #007949; }
     .descriptions .brewskies .full-site:hover {
-      border-bottom: 2px solid #007949; }
+      border-bottom: 1px solid #007949; }
   .descriptions .maelstrom .full-site {
     color: #41D6C3; }
     .descriptions .maelstrom .full-site:hover {
-      border-bottom: 2px solid #41d6c3; }
+      border-bottom: 1px solid #41d6c3; }
   .descriptions .frank .full-site {
     color: #000; }
     .descriptions .frank .full-site:hover {
-      border-bottom: 2px solid black; }
+      border-bottom: 1px solid black; }
   .descriptions .mcplanr .full-site {
     color: #C64747; }
     .descriptions .mcplanr .full-site:hover {
-      border-bottom: 2px solid #c64747; }
+      border-bottom: 1px solid #c64747; }
   .descriptions .neutral .full-site {
     color: #f2d81c; }
     .descriptions .neutral .full-site:hover {
-      border-bottom: 2px solid #f2d81c; }
+      border-bottom: 1px solid #f2d81c; }
   .descriptions .oldsite .full-site {
     color: #C2C388; }
     .descriptions .oldsite .full-site:hover {
-      border-bottom: 2px solid #c2c388; }
+      border-bottom: 1px solid #c2c388; }
 
 @media screen and (max-width: 600px) {
   .descriptions .left, .descriptions .right {
