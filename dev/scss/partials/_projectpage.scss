@@ -6,7 +6,7 @@
   overflow: scroll;
   position: absolute;
   transform: translateX(100%);
-  transition: transform .6s ease-out;
+  transition: transform .6s ease-out 1s;
   top: 0;
   width: 100%;
   z-index: 10;
@@ -143,8 +143,18 @@
   @include shadow(2);
   margin-top: 2rem;
   overflow: hidden;
-  transition: width .3s ease-out;
+  transition: opacity .4s ease-out .7s,
+              transform .4s ease-out .7s,
+              width .3s ease-out;
   width: 80%;
+
+  opacity: 0;
+  transform: translateY(20px);
+
+  &.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
   &.phone {
     width: $mobile-width;

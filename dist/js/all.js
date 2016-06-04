@@ -136,6 +136,8 @@ document.querySelector(".portfolio").addEventListener("click", function(e) {
 
 		document.querySelector('.project-page-wrapper').classList.add('show');
 		document.querySelector('body').classList.add('noscroll');
+
+    iframe.parentNode.classList.add('active');
 	}
 });
 
@@ -169,6 +171,7 @@ document.querySelector(".dropdown").addEventListener("click", function(e) {
 });
 
 document.querySelector(".left button").addEventListener("click", function(e) {
+  iframe.parentNode.classList.remove('active');
 	document.querySelector('.project-page-wrapper').classList.remove('show');
 	document.querySelector('body').classList.remove('noscroll');
 
