@@ -119,6 +119,8 @@ document.querySelector(".portfolio").addEventListener("click", function(e) {
 		var me = document.querySelector('.me');
 		var portfolio = document.querySelector('.portfolio');
 
+    window.scrollTo(0, 0);
+
 		// change iframe src
 		iframe.src = e.target.dataset.projectUrl;
 

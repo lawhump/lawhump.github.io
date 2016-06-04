@@ -2,7 +2,7 @@ html { font-size: 62.5%; }
 body {
 	font-size: 1.6rem;
 	line-height: 2.56rem;
-	overflow: hidden;
+	overflow-x: hidden;
 	text-rendering: optimizeLegibility;
 	width: 100vw;
 
@@ -208,4 +208,11 @@ and (max-device-width: 480px) {
 			text-transform: uppercase;
 		}
 	}
+
+}
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px) {
+  .alert { display: none; }
 }

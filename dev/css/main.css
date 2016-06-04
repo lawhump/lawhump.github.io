@@ -359,7 +359,7 @@ html {
 body {
   font-size: 1.6rem;
   line-height: 2.56rem;
-  overflow: hidden;
+  overflow-x: hidden;
   text-rendering: optimizeLegibility;
   width: 100vw; }
   body.scroll {
@@ -546,6 +546,10 @@ article {
       float: right;
       margin-top: 1rem;
       text-transform: uppercase; }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .alert {
+    display: none; } }
 
 .me {
   background-color: #fff;
