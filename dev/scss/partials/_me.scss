@@ -11,6 +11,7 @@
 	text-align: center;
 	transition: opacity .3s ease-out;
 	width: 45%;
+  will-change: opacity;
 
   > *:not(.cta) {
     margin: 0 auto;

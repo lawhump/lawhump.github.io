@@ -23,8 +23,8 @@ var laptopWidth = 0.8*768 + 30;
 
 function changeButton() {
 	var cta		= document.querySelector('.cta');
-	cta.className += ' flat';
-	cta.innerHTML = 'Hit Me Up'
+	cta.classList.add('flat');
+	cta.textContent = 'Hit Me Up'
 	cta.setAttribute('href', 'mailto:lawrenceh1993@gmail.com');
 }
 
@@ -34,7 +34,8 @@ function ctaHandler () {
 
 	// TODO animate me first, setTimeout for the blurb
 
-	me.className += 'shrink';
+	me.classList.add('shrink');
+  // This can be done with CSS
 	$('.blurb').fadeIn({
 			'duration': 200,
 			'complete': changeButton
@@ -46,28 +47,12 @@ function showInterest () {
 	var interest = interests[index];
 
 	var interestSpan = document.querySelector('.interest');
-	interestSpan.innerHTML = interest;
+	interestSpan.textContent = interest;
 	index = (index+1)%len;
 }
 
 function fadeMeIn() {
 	document.querySelector('.me').classList.add('fadeIn');
-}
-
-function showMarkup(data) {
-	document.querySelector('body').innerHTML += data;
-	console.log(data);
-}
-
-function getMarkup(url, callback) {
-  var xmlHttp = new XMLHttpRequest();
-  xmlHttp.onreadystatechange = function() {
-    if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
-      callback(xmlHttp.responseText);
-    }
-  }
-  xmlHttp.open('GET', url, true); // true for asynchronous
-  xmlHttp.send(null);
 }
 
 function resizeDevice(w) {
@@ -102,9 +87,6 @@ function resizeDevice(w) {
 }
 
 (function() {
-	document.querySelector('.cta').onclick = ctaHandler;
-	document.querySelector('.interest').onclick = showInterest;
-
 	fadeMeIn();
 	showInterest();
 
@@ -113,6 +95,8 @@ function resizeDevice(w) {
 	document.querySelector('.alert').classList.add('show');
 })();
 
+document.querySelector('.cta').onclick = ctaHandler;
+document.querySelector('.interest').onclick = showInterest;
 
 document.querySelector(".portfolio").addEventListener("click", function(e) {
 	if(e.target && e.target.nodeName == "IMG") {
@@ -122,9 +106,7 @@ document.querySelector(".portfolio").addEventListener("click", function(e) {
     window.scrollTo(0, 0);
 
 		// change iframe src
-		iframe.src = e.target.dataset.projectUrl;
-
-    document.querySelector('.overlay').classList.add('active');
+		// iframe.src = e.target.dataset.projectUrl;
 
 		// add value to input
 		var visibleAddress = e.target.dataset.projectUrl.split('http://')[1];
@@ -140,6 +122,9 @@ document.querySelector(".portfolio").addEventListener("click", function(e) {
 		document.querySelector('body').classList.add('noscroll');
 
     iframe.parentNode.classList.add('active');
+
+    var loadSite = function () { iframe.src = e.target.dataset.projectUrl; };
+    window.setTimeout(loadSite, 1100);
 	}
 });
 
@@ -174,14 +159,14 @@ document.querySelector(".dropdown").addEventListener("click", function(e) {
 
 document.querySelector(".left button").addEventListener("click", function(e) {
   iframe.parentNode.classList.remove('active');
+  currentDesc.classList.add('fadeOut');
+  currentDesc.setAttribute('hidden', '');
 	document.querySelector('.project-page-wrapper').classList.remove('show');
 	document.querySelector('body').classList.remove('noscroll');
-
-  document.querySelector('.overlay').classList.remove('active');
+  iframe.src = "";
 });
 
 document.querySelector(".alert .dismiss").addEventListener("click", function(e) {
-	// console.log(this);
 	this.parentNode.classList.remove("show");
 });
 
@@ -189,7 +174,7 @@ window.onresize = function(e) {
 	resizeDevice(e.target.outerWidth);
 };
 
-// $("input:text").focus(function() { $(this).select(); } );
+$("input:text").focus(function() { $(this).select(); } );
 document.querySelector('.address').addEventListener('focus', function(e) {
   console.log(e);
 });

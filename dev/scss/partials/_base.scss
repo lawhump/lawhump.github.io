@@ -122,20 +122,6 @@ article {
   animation-fill-mode: forwards;
 }
 
-// @include keyframes-fadeIn;
-
-// .fadeIn {
-// 	@include animation(fadeIn, 2s);
-// 	animation-timing-function: ease-out;
-// 	animation-fill-mode: forwards;
-// }
-//
-// .fadeOut {
-//   @include animation(fadeOut, .3s);
-// 	animation-timing-function: ease-out;
-//   animation-fill-mode: forwards;
-// }
-
 @media only screen and (max-width: 1600px) {
     html { font-size: 52.5%; }
 }
@@ -160,21 +146,6 @@ article {
 and (min-device-width: 320px)
 and (max-device-width: 480px) {
     html { font-size: 52.5%; }
-}
-
-.overlay {
-	background-color: rgba(0,0,0,0);
-	height: 100%;
-	left: 0;
-	pointer-events: none;
-	position: absolute;
-	top: 0;
-	// THIS THIS THIS
-	transition: background-color .3s ease-out;
-	width: 100%;
-	z-index: 5;
-
-	&.active { background-color: rgba(0,0,0,.7); }
 }
 
 .home {

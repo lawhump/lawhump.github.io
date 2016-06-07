@@ -500,19 +500,6 @@ article {
   html {
     font-size: 52.5%; } }
 
-.overlay {
-  background-color: transparent;
-  height: 100%;
-  left: 0;
-  pointer-events: none;
-  position: absolute;
-  top: 0;
-  transition: background-color .3s ease-out;
-  width: 100%;
-  z-index: 5; }
-  .overlay.active {
-    background-color: rgba(0, 0, 0, 0.7); }
-
 .home {
   height: 100%;
   overflow: hidden;
@@ -566,7 +553,8 @@ article {
   opacity: 0;
   text-align: center;
   transition: opacity .3s ease-out;
-  width: 45%; }
+  width: 45%;
+  will-change: opacity; }
   .me > *:not(.cta) {
     margin: 0 auto;
     max-width: 60rem;
@@ -616,8 +604,6 @@ article {
   position: relative;
   width: 55%; }
   .portfolio figure {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
     color: #fff;
     cursor: pointer;
     font-size: 2rem;
@@ -633,7 +619,8 @@ article {
     transition: height .3s ease-out;
     width: 100%; }
     .portfolio figure:before {
-      opacity: 0; }
+      opacity: 0;
+      will-change: opacity; }
     .portfolio figure:hover:before {
       height: 85%;
       left: 5%;
@@ -649,8 +636,6 @@ article {
       -webkit-filter: contrast(115%) grayscale(70%) brightness(30%);
       filter: contrast(115%) grayscale(70%) brightness(30%); }
   .portfolio figcaption {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
     left: 50%;
     opacity: 0;
     position: absolute;
@@ -662,8 +647,6 @@ article {
     transition: opacity .3s ease-out, transform .3s ease-out;
     transition: opacity .3s ease-out, transform .3s ease-out, -webkit-transform .3s ease-out; }
   .portfolio img {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
     height: 100%;
     min-height: 100%;
     transition: all .4s ease-out;
@@ -757,11 +740,12 @@ article {
   -webkit-transform: translateX(100%);
       -ms-transform: translateX(100%);
           transform: translateX(100%);
-  transition: -webkit-transform .6s ease-out 1s;
-  transition: transform .6s ease-out 1s;
-  transition: transform .6s ease-out 1s, -webkit-transform .6s ease-out 1s;
+  transition: -webkit-transform .6s ease-out;
+  transition: transform .6s ease-out;
+  transition: transform .6s ease-out, -webkit-transform .6s ease-out;
   top: 0;
   width: 100%;
+  will-change: transform;
   z-index: 10; }
   .project-page-wrapper.show {
     -webkit-transform: translateX(0%);
@@ -988,20 +972,24 @@ article {
 .container {
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23), 0 3px 12px rgba(0, 0, 0, 0.16);
   margin-top: 2rem;
-  overflow: hidden;
-  transition: opacity .4s ease-out .7s, width .3s ease-out, -webkit-transform .4s ease-out .7s;
-  transition: opacity .4s ease-out .7s, transform .4s ease-out .7s, width .3s ease-out;
-  transition: opacity .4s ease-out .7s, transform .4s ease-out .7s, width .3s ease-out, -webkit-transform .4s ease-out .7s;
-  width: 80%;
   opacity: 0;
+  overflow: hidden;
   -webkit-transform: translateY(20px);
       -ms-transform: translateY(20px);
-          transform: translateY(20px); }
+          transform: translateY(20px);
+  transition: opacity .4s ease-out, width .3s ease-out, -webkit-transform .4s ease-out;
+  transition: opacity .4s ease-out, transform .4s ease-out, width .3s ease-out;
+  transition: opacity .4s ease-out, transform .4s ease-out, width .3s ease-out, -webkit-transform .4s ease-out;
+  width: 80%;
+  will-change: opacity, transform; }
   .container.active {
     opacity: 1;
     -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
-            transform: translateY(0); }
+            transform: translateY(0);
+    transition: opacity .4s ease-out 1000ms, width .3s ease-out, -webkit-transform .4s ease-out 1000ms;
+    transition: opacity .4s ease-out 1000ms, transform .4s ease-out 1000ms, width .3s ease-out;
+    transition: opacity .4s ease-out 1000ms, transform .4s ease-out 1000ms, width .3s ease-out, -webkit-transform .4s ease-out 1000ms; }
   .container.phone {
     width: 306px;
     height: 544px; }
