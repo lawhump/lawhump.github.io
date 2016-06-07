@@ -92,7 +92,7 @@ function resizeDevice(w) {
 
 	resizeDevice(window.outerWidth);
 
-	document.querySelector('.alert').classList.add('show');
+	// document.querySelector('.alert').classList.add('show');
 })();
 
 document.querySelector('.cta').onclick = ctaHandler;
@@ -166,9 +166,9 @@ document.querySelector(".left button").addEventListener("click", function(e) {
   iframe.src = "";
 });
 
-document.querySelector(".alert .dismiss").addEventListener("click", function(e) {
-	this.parentNode.classList.remove("show");
-});
+// document.querySelector(".alert .dismiss").addEventListener("click", function(e) {
+// 	this.parentNode.classList.remove("show");
+// });
 
 window.onresize = function(e) {
 	resizeDevice(e.target.outerWidth);
