@@ -740,9 +740,9 @@ article {
   -webkit-transform: translateX(100%);
       -ms-transform: translateX(100%);
           transform: translateX(100%);
-  transition: -webkit-transform .6s ease-out;
-  transition: transform .6s ease-out;
-  transition: transform .6s ease-out, -webkit-transform .6s ease-out;
+  transition: -webkit-transform .8s ease;
+  transition: transform .8s ease;
+  transition: transform .8s ease, -webkit-transform .8s ease;
   top: 0;
   width: 100%;
   will-change: transform;
@@ -987,9 +987,9 @@ article {
     -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
             transform: translateY(0);
-    transition: opacity .4s ease-out 1000ms, width .3s ease-out, -webkit-transform .4s ease-out 1000ms;
-    transition: opacity .4s ease-out 1000ms, transform .4s ease-out 1000ms, width .3s ease-out;
-    transition: opacity .4s ease-out 1000ms, transform .4s ease-out 1000ms, width .3s ease-out, -webkit-transform .4s ease-out 1000ms; }
+    transition: opacity .4s ease-out 930ms, width .3s ease-out, -webkit-transform .4s ease-out 930ms;
+    transition: opacity .4s ease-out 930ms, transform .4s ease-out 930ms, width .3s ease-out;
+    transition: opacity .4s ease-out 930ms, transform .4s ease-out 930ms, width .3s ease-out, -webkit-transform .4s ease-out 930ms; }
   .container.phone {
     width: 306px;
     height: 544px; }

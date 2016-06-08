@@ -6,7 +6,7 @@
   overflow: scroll;
   position: absolute;
   transform: translateX(100%);
-  transition: transform .6s ease-out;
+  transition: transform .8s ease;
   top: 0;
   width: 100%;
   will-change: transform;
@@ -156,8 +156,8 @@
   &.active {
     opacity: 1;
     transform: translateY(0);
-    transition: opacity .4s ease-out 1000ms,
-                transform .4s ease-out 1000ms,
+    transition: opacity .4s ease-out 930ms,
+                transform .4s ease-out 930ms,
                 width .3s ease-out;
   }
 

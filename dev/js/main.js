@@ -105,13 +105,9 @@ document.querySelector(".portfolio").addEventListener("click", function(e) {
 
     window.scrollTo(0, 0);
 
-		// change iframe src
-		// iframe.src = e.target.dataset.projectUrl;
-
-		// add value to input
 		var visibleAddress = e.target.dataset.projectUrl.split('http://')[1];
     address.value = visibleAddress;
-		// show right description
+
 		selectedProj = dropdown.querySelector('[data-project="'+e.target.dataset.name+'"]');
 		selectedProj.classList.add('selected');
 		currentDesc = document.querySelector('.descriptions .' + e.target.dataset.name);
@@ -124,7 +120,7 @@ document.querySelector(".portfolio").addEventListener("click", function(e) {
     iframe.parentNode.classList.add('active');
 
     var loadSite = function () { iframe.src = e.target.dataset.projectUrl; };
-    window.setTimeout(loadSite, 1100);
+    window.setTimeout(loadSite, 1250);
 	}
 });
 
