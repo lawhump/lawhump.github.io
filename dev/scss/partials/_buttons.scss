@@ -1,6 +1,20 @@
 $animation-dur: .8s;
 
-@include keyframes-button();
+// @include keyframes-button();
+
+@include keyframes(fade-to-flat) {
+  0% {
+    background-color: $accent-color;
+    box-shadow: 0 .2rem .5rem 0 rgba(0,0,0,.26);
+    color: $white;
+  }
+
+  100% {
+    background-color: $white;
+    box-shadow: none;
+    color: $accent-color;
+  }
+}
 
 .cta {
 	background-color: $accent-color;
@@ -10,7 +24,7 @@ $animation-dur: .8s;
 	display: inline-block;
 	font-family: 'Hind', sans-serif;
 	margin: 2.2rem auto 0 auto;
-	max-width: 10rem;
+	max-width: 12rem;
 	overflow: hidden;
 	padding: 2rem;
 	text-decoration: none;
@@ -19,7 +33,7 @@ $animation-dur: .8s;
   white-space: nowrap;
 
 	&.flat {
-		@include animation(fade-to-flat, $animation-dur);
+		@include animation('fade-to-flat .8s');
 		animation-fill-mode: forwards;
 	}
 

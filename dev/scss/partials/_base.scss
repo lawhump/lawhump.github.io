@@ -2,7 +2,9 @@ html { font-size: 62.5%; }
 body {
 	font-size: 1.6rem;
 	line-height: 2.56rem;
-	overflow-x: hidden;
+  // overflow-x: hidden;
+  // overflow-y: scroll !important;
+  // position: fixed;
 	text-rendering: optimizeLegibility;
 	width: 100vw;
 
@@ -49,6 +51,14 @@ ul {
 button {
 	border: none;
 	background-color: $white;
+
+  &::-moz-focus-inner {
+    border: 0;
+  }
+
+  &:focus {
+    outline: none;
+  }
 }
 
 article {
@@ -106,12 +116,6 @@ article {
   }
 }
 
-@include keyframes(toProjectPage) {
-	0% {
-
-	}
-}
-
 .fadeIn {
   @include animation('fadeIn .5s ease-in-out');
   animation-fill-mode: forwards;
@@ -121,6 +125,7 @@ article {
   @include animation('fadeOut .3s ease-out');
   animation-fill-mode: forwards;
 }
+
 
 @media only screen and (max-width: 1600px) {
     html { font-size: 52.5%; }
@@ -155,7 +160,7 @@ and (max-device-width: 480px) {
 	padding: 0;
 	width: 100%;
 
-	.alert {
+	/*.alert {
 		@include shadow(1);
 		border-radius: 4px;
 		bottom: 2rem;
@@ -178,12 +183,23 @@ and (max-device-width: 480px) {
 			margin-top: 1rem;
 			text-transform: uppercase;
 		}
-	}
+	}*/
 
 }
 
 @media only screen
 and (min-device-width: 320px)
 and (max-device-width: 480px) {
-  .alert { display: none; }
+  // .alert { display: none; }
 }
+
+// @media only screen
+// and (min-device-width: 320px)
+// and (max-device-width: 480px) {
+//   .site-wrapper {
+//     overflow-x: hidden;
+//     overflow-y: scroll !important;
+//     // overflow-y: scroll;
+//     position:fixed;
+//   }
+// }
