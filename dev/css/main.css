@@ -817,6 +817,8 @@ article {
     -webkit-flex: 1 0 auto;
     -ms-flex: 1 0 auto;
         flex: 1 0 auto; }
+  .top-bar .left button {
+    padding-left: 0; }
   .top-bar .right {
     text-align: right; }
   .top-bar i:not(.fa-angle-down) {

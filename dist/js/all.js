@@ -14,6 +14,8 @@ var address = document.querySelector('.address');
 var iframe = document.getElementById('iframe');
 var dropdown = document.querySelector('.dropdown');
 var home = document.querySelector('.home');
+var projectPage = document.querySelector('.project-page-wrapper');
+
 var selectedProj;
 // var selectedProj = dropdown.querySelector('.selected');
 var currentDesc;
@@ -115,7 +117,9 @@ document.querySelector(".portfolio").addEventListener("click", function(e) {
     currentDesc.classList.add('fadeIn');
 		currentDesc.removeAttribute('hidden');
 
-		document.querySelector('.project-page-wrapper').classList.add('show');
+    projectPage.removeAttribute('hidden');
+		projectPage.classList.add('show');
+    // window.setTimeout("projectPage.classList.add('show');", 300);
     home.setAttribute('hidden', '');
 
     iframe.parentNode.classList.add('active');
@@ -158,7 +162,8 @@ document.querySelector(".left button").addEventListener("click", function(e) {
   iframe.parentNode.classList.remove('active');
   currentDesc.classList.add('fadeOut');
   currentDesc.setAttribute('hidden', '');
-	document.querySelector('.project-page-wrapper').classList.remove('show');
+	projectPage.classList.remove('show');
+	projectPage.setAttribute('hidden', '');
   home.removeAttribute('hidden');
   iframe.src = "";
 });
