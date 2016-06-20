@@ -359,12 +359,9 @@ html {
 body {
   font-size: 1.6rem;
   line-height: 2.56rem;
+  overflow-x: hidden;
   text-rendering: optimizeLegibility;
   width: 100vw; }
-  body.scroll {
-    overflow: auto; }
-  body.noscroll {
-    overflow: hidden; }
 
 html, body {
   border: none;
@@ -502,31 +499,7 @@ article {
   overflow: hidden;
   margin: 0;
   padding: 0;
-  width: 100%;
-  /*.alert {
-		@include shadow(1);
-		border-radius: 4px;
-		bottom: 2rem;
-		left: 0;
-		margin-left: 2rem;
-		max-width: 350px;
-		padding: 2.5rem 2.75rem;
-		position: absolute;
-		transform: translateX(-150%);
-		transition: transform .4s ease-out;
-
-		&.show {
-			transition: transform .3s ease-out 4s;
-			transform: translateX(0);
-		}
-
-		button {
-			color: $accent-color;
-			float: right;
-			margin-top: 1rem;
-			text-transform: uppercase;
-		}
-	}*/ }
+  width: 100%; }
 
 .me {
   background-color: #fff;

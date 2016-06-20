@@ -13,6 +13,7 @@ var currDevice = document.querySelector('.right .selected');
 var address = document.querySelector('.address');
 var iframe = document.getElementById('iframe');
 var dropdown = document.querySelector('.dropdown');
+var home = document.querySelector('.home');
 var selectedProj;
 // var selectedProj = dropdown.querySelector('.selected');
 var currentDesc;
@@ -115,7 +116,7 @@ document.querySelector(".portfolio").addEventListener("click", function(e) {
 		currentDesc.removeAttribute('hidden');
 
 		document.querySelector('.project-page-wrapper').classList.add('show');
-		document.querySelector('body').classList.add('noscroll');
+    home.setAttribute('hidden', '');
 
     iframe.parentNode.classList.add('active');
 
@@ -158,13 +159,9 @@ document.querySelector(".left button").addEventListener("click", function(e) {
   currentDesc.classList.add('fadeOut');
   currentDesc.setAttribute('hidden', '');
 	document.querySelector('.project-page-wrapper').classList.remove('show');
-	document.querySelector('body').classList.remove('noscroll');
+  home.removeAttribute('hidden');
   iframe.src = "";
 });
-
-// document.querySelector(".alert .dismiss").addEventListener("click", function(e) {
-// 	this.parentNode.classList.remove("show");
-// });
 
 window.onresize = function(e) {
 	resizeDevice(e.target.outerWidth);
