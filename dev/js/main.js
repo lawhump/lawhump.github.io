@@ -117,7 +117,6 @@ document.querySelector(".portfolio").addEventListener("click", function(e) {
     currentDesc.classList.add('fadeIn');
 		currentDesc.removeAttribute('hidden');
 
-    projectPage.removeAttribute('hidden');
 		projectPage.classList.add('show');
     // window.setTimeout("projectPage.classList.add('show');", 300);
     home.setAttribute('hidden', '');
@@ -163,7 +162,6 @@ document.querySelector(".left button").addEventListener("click", function(e) {
   currentDesc.classList.add('fadeOut');
   currentDesc.setAttribute('hidden', '');
 	projectPage.classList.remove('show');
-	projectPage.setAttribute('hidden', '');
   home.removeAttribute('hidden');
   iframe.src = "";
 });
