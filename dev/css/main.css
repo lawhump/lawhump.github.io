@@ -373,11 +373,19 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0; }
 
 h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   line-height: 1.3; }
 
 h2 {
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Montserrat', Arial, sans-serif; }
+
+h3 {
+  font-family: 'Hind', Arial, sans-serif;
+  text-transform: uppercase; }
+
+h4 {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: 'Montserrat', Arial, sans-serif; }
 
 p {
   font-family: 'Hind', sans-serif;
@@ -586,35 +594,46 @@ article {
   .portfolio figure {
     color: #fff;
     cursor: pointer;
-    font-size: 2rem;
-    font-weight: 300;
     height: 51rem;
-    letter-spacing: .1rem;
     margin: 0;
     overflow: hidden;
     padding: 0;
     position: relative;
     text-align: center;
-    text-transform: uppercase;
     transition: height .3s ease-out;
     width: 100%; }
     .portfolio figure:before {
-      opacity: 0;
-      will-change: opacity; }
-    .portfolio figure:hover:before {
-      height: 85%;
-      left: 5%;
-      opacity: 1;
-      top: 5%;
-      width: 87.5%; }
+      background-color: transparent;
+      content: '';
+      height: 100%;
+      left: 0;
+      position: absolute;
+      transition: background-color .3s ease-out;
+      top: 0;
+      width: 100%; }
     .portfolio figure:hover figcaption {
       opacity: 1;
       -webkit-transform: translate(-50%, -50%);
           -ms-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%); }
-    .portfolio figure:hover img {
-      -webkit-filter: contrast(115%) grayscale(70%) brightness(30%);
-      filter: contrast(115%) grayscale(70%) brightness(30%); }
+  .portfolio .illicit:hover:before {
+    background-color: black; }
+  .portfolio .nowplaying:hover:before {
+    background-color: #2185c5; }
+  .portfolio .map:hover:before {
+    background-color: #f7685c; }
+  .portfolio .brewskies:hover:before {
+    background-color: #007949; }
+  .portfolio .maelstrom:hover:before {
+    background-color: #41d6c3; }
+  .portfolio .frank:hover:before {
+    background-color: black; }
+  .portfolio .mcplanr:hover:before {
+    background-color: #c64747; }
+  .portfolio .neutral:hover:before {
+    background-color: #f2d81c; }
+  .portfolio .oldsite:hover:before {
+    background-color: #c2c388; }
   .portfolio figcaption {
     left: 50%;
     opacity: 0;

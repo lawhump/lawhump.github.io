@@ -10,45 +10,69 @@
 		// backface-visibility: hidden;
 		color: #fff;
 		cursor: pointer;
-		font-size: 2rem;
-    font-weight: 300;
 		height: 51rem;
-    letter-spacing: .1rem;
     margin: 0;
 		overflow: hidden;
     padding: 0;
     position: relative;
     text-align: center;
-    text-transform: uppercase;
 		transition: height .3s ease-out;
 		width: 100%;
 
     &:before {
-      opacity: 0;
-      will-change: opacity;
+      background-color: rgba(0,0,0,0);
+      content: '';
+      height: 100%;
+      left: 0;
+      position: absolute;
+      transition: background-color .3s ease-out;
+      top: 0;
+      width: 100%;
+      // z-index: 10;
     }
 
     &:hover {
-      &:before {
-        height: 85%;
-        left: 5%;
-        opacity: 1;
-        top: 5%;
-        width: 87.5%;
-      }
-
       figcaption {
         opacity: 1;
         transform: translate(-50%, -50%);
       }
-
-      img {
-        -webkit-filter: contrast(115%) grayscale(70%) brightness(30%);
-        filter: contrast(115%) grayscale(70%) brightness(30%);
-				// -webkit-transform: scale(1.05);
-				// transform: scale(1.05);
-      }
     }
+  }
+
+  .illicit:hover:before {
+    background-color: rgba($color-illicit, 1);
+  }
+
+  .nowplaying:hover:before {
+    background-color: rgba($color-nowplaying, 1);
+  }
+
+  .map:hover:before {
+    background-color: rgba($color-map, 1);
+  }
+
+  .brewskies:hover:before {
+    background-color: rgba($color-brewskies, 1);
+  }
+
+  .maelstrom:hover:before {
+    background-color: rgba($color-maelstrom, 1);
+  }
+
+  .frank:hover:before {
+    background-color: rgba($color-frank, 1);
+  }
+
+  .mcplanr:hover:before {
+    background-color: rgba($color-mcplanr, 1);
+  }
+
+  .neutral:hover:before {
+    background-color: rgba($color-neutral, 1);
+  }
+
+  .oldsite:hover:before {
+    background-color: rgba($color-oldsite, 1);
   }
 
   figcaption {
