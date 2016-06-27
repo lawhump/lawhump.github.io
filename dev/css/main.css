@@ -607,6 +607,7 @@ article {
       content: '';
       height: 100%;
       left: 0;
+      pointer-events: none;
       position: absolute;
       transition: background-color .3s ease-out;
       top: 0;
