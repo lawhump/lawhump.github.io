@@ -107,6 +107,8 @@ article {
 	}
 }
 
+
+
 .justify {
 	text-align: justify;
 }
@@ -119,6 +121,12 @@ article {
 .show {
 	display: block;
 	opacity: 1;
+}
+
+@media screen and (max-width: 600px) {
+  .hide-on-mobile {
+    display: none;
+  }
 }
 
 @include keyframes(fadeIn) {

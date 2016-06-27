@@ -451,6 +451,10 @@ article {
   display: block;
   opacity: 1; }
 
+@media screen and (max-width: 600px) {
+  .hide-on-mobile {
+    display: none; } }
+
 @-webkit-keyframes fadeIn {
   0% {
     display: none;
