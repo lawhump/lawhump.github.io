@@ -16,6 +16,8 @@ var dropdown = document.querySelector('.dropdown');
 var home = document.querySelector('.home');
 var projectPage = document.querySelector('.project-page-wrapper');
 
+var bodyWrapper = document.querySelector('.body-wrapper');
+
 var selectedProj;
 // var selectedProj = dropdown.querySelector('.selected');
 var currentDesc;
@@ -119,6 +121,9 @@ document.querySelector(".portfolio").addEventListener("click", function(e) {
 
 		projectPage.classList.add('show');
     // window.setTimeout("projectPage.classList.add('show');", 300);
+
+    bodyWrapper.classList.add('scroll');
+
     home.setAttribute('hidden', '');
 
     iframe.parentNode.classList.add('active');
@@ -158,6 +163,7 @@ document.querySelector(".dropdown").addEventListener("click", function(e) {
 });
 
 document.querySelector(".left button").addEventListener("click", function(e) {
+  bodyWrapper.classList.remove('scroll');
   iframe.parentNode.classList.remove('active');
   currentDesc.classList.add('fadeOut');
   currentDesc.setAttribute('hidden', '');

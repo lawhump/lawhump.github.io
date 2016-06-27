@@ -419,7 +419,7 @@ article {
   min-height: 100vh;
   min-width: 100vw;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
   position: relative;
   width: 100%; }
@@ -430,6 +430,8 @@ article {
     position: absolute;
     top: 0;
     width: 100%; }
+  .body-wrapper.scroll {
+    overflow-y: auto; }
 
 .accent {
   border-bottom: 1px solid rgba(255, 82, 82, 0);
@@ -1128,9 +1130,3 @@ iframe {
     float: none;
     height: auto;
     width: 100%; } }
-
-.site-wrapper {
-  height: 100%;
-  overflow-x: hidden;
-  position: relative;
-  width: 100%; }

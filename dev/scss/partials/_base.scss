@@ -78,7 +78,7 @@ article {
   min-height: 100vh;
   min-width: 100vw;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
   position: relative;
   width: 100%;
@@ -90,6 +90,10 @@ article {
     position: absolute;
     top: 0;
     width: 100%;
+  }
+
+  &.scroll {
+    overflow-y: auto;
   }
 }
 
@@ -187,20 +191,3 @@ and (max-device-width: 480px) {
 	padding: 0;
 	width: 100%;
 }
-
-@media only screen
-and (min-device-width: 320px)
-and (max-device-width: 480px) {
-  // .alert { display: none; }
-}
-
-// @media only screen
-// and (min-device-width: 320px)
-// and (max-device-width: 480px) {
-//   .site-wrapper {
-//     overflow-x: hidden;
-//     overflow-y: scroll !important;
-//     // overflow-y: scroll;
-//     position:fixed;
-//   }
-// }
