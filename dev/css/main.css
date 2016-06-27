@@ -894,6 +894,8 @@ article {
   text-align: center;
   width: 55%;
   z-index: 10; }
+  .dropdown h4 {
+    color: #333; }
   .dropdown ul {
     display: none;
     left: 50%;
