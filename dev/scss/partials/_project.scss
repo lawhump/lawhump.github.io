@@ -75,10 +75,9 @@
   }
 
   figcaption {
-		// -webkit-backface-visibility: hidden;
-		// backface-visibility: hidden;
     left: 50%;
     opacity: 0;
+    pointer-events: none;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -35%);

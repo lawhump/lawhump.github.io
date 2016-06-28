@@ -4,7 +4,7 @@ var interests = ["data visualizations", "rock climbing", "ideating",
 "India Pale Ales", "Java", "being barefoot", "minimalism", "working with talented people",
 "Orbit Wintermint gum", "taking public transportation", "playing with dogs",
 "board games", "a tasteful romcom", "browsing Dribbble", "ice skating",
-"oatmeal for breakfast", "lending a helping hand"];
+"oatmeal for breakfast", "lending a helping hand", "functional programming"];
 
 var len = interests.length;
 var index = Math.floor(Math.random() * (len));
@@ -126,7 +126,7 @@ document.querySelector(".portfolio").addEventListener("click", function(e) {
 
     home.setAttribute('hidden', '');
 
-    iframe.parentNode.classList.add('active');
+    iframe.parentNode.parentNode.classList.add('active');
 
     var loadSite = function () { iframe.src = e.target.dataset.projectUrl; };
     window.setTimeout(loadSite, 1250);

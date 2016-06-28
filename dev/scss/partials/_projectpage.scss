@@ -218,8 +218,19 @@
   }
 }
 
+// Yo but for real, fuck Safari
+.scroll-wrapper {
+  height: 100%;
+  margin: 0;
+  -webkit-overflow-scrolling: touch;
+  overflow: scroll;
+  padding: 0;
+  width: 100%;
+}
+
 iframe {
   height: 100%;
+  max-width: 100%;
   width: 100%;
 }
 
@@ -298,12 +309,12 @@ iframe {
 
 }
 
-@media screen and (max-width: 600px) {
-  .descriptions .left, .descriptions .right {
-    text-align: center;
-    width: 100%;
-  }
-}
+// @media screen and (max-width: 600px) {
+//   .descriptions .left, .descriptions .right {
+//     text-align: center;
+//     width: 100%;
+//   }
+// }
 
 .summary {
   opacity: .7;
