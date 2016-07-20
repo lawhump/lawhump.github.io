@@ -98,6 +98,14 @@ function resizeDevice(w) {
 	resizeDevice(window.outerWidth);
 
 	// document.querySelector('.alert').classList.add('show');
+  // var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+  var isSafari = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
+                 navigator.userAgent && !navigator.userAgent.match('CriOS');
+  var isIOS    = /[iPad]|[iPhone]/i.test(navigator.userAgent);
+
+  if (isSafari && !isIOS) {
+    console.log("Do yourself a favor, change browsers.");
+  }
 })();
 
 document.querySelector('.cta').onclick = ctaHandler;

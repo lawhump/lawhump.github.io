@@ -72,6 +72,10 @@
     background-color: $color-map;
   }
 
+  [data-project="meme"]:hover {
+    background-color: $color-meme;
+  }
+
   [data-project="brewskies"]:hover {
     background-color: $color-brewskies;
   }

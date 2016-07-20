@@ -11,6 +11,7 @@ $divider-color		  : #B6B6B6;
 $color-illicit: #000;
 $color-nowplaying: #2185C5;
 $color-map: #F7685C;
+$color-meme: #e7c824;
 $color-brewskies: #007949;
 $color-maelstrom: #41D6C3;
 $color-frank: #000;
@@ -18,14 +19,14 @@ $color-mcplanr: #C64747;
 $color-neutral: #f2d81c;
 $color-oldsite: #C2C388;
 
+$scale-factor: .85;
+$mobile-width: 360px * $scale-factor;
+$tablet-width: 1024px * $scale-factor;
+$laptop-width: 1280px * $scale-factor;
 
-$mobile-width: 360px * .85;
-$tablet-width: 1024px * .85;
-$laptop-width: 1280px * .85;
-
-$mobile-height: 640px * .85;
-$tablet-height: 768px * .85;
-$laptop-height: 720px * .85;
+$mobile-height: 640px * $scale-factor;
+$tablet-height: 768px * $scale-factor;
+$laptop-height: 720px * $scale-factor;
 
 
 $numProjects: 9;

@@ -627,6 +627,8 @@ article {
     background-color: #2185c5; }
   .portfolio .map:hover:before {
     background-color: #f7685c; }
+  .portfolio .meme:hover:before {
+    background-color: #e7c824; }
   .portfolio .brewskies:hover:before {
     background-color: #007949; }
   .portfolio .maelstrom:hover:before {
@@ -936,6 +938,8 @@ article {
     background-color: #2185C5; }
   .dropdown [data-project="map"]:hover {
     background-color: #F7685C; }
+  .dropdown [data-project="meme"]:hover {
+    background-color: #e7c824; }
   .dropdown [data-project="brewskies"]:hover {
     background-color: #007949; }
   .dropdown [data-project="maelstrom"]:hover {
@@ -978,7 +982,8 @@ article {
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23), 0 3px 12px rgba(0, 0, 0, 0.16);
   margin-top: 2rem;
   opacity: 0;
-  overflow: hidden;
+  overflow: initial;
+  padding-bottom: 4rem;
   -webkit-transform: translateY(20px);
       -ms-transform: translateY(20px);
           transform: translateY(20px);
@@ -1023,7 +1028,7 @@ article {
   padding-left: 1rem;
   position: relative;
   height: 5rem;
-  width: 100%;
+  width: calc(100% - 1rem);
   z-index: 3; }
 
 .address {
@@ -1047,7 +1052,7 @@ article {
   height: 100%;
   margin: 0;
   -webkit-overflow-scrolling: touch;
-  overflow: scroll;
+  overflow-y: scroll;
   padding: 0;
   width: 100%; }
 
@@ -1090,6 +1095,10 @@ iframe {
     color: #F7685C; }
     .descriptions .map .full-site:hover {
       border-bottom: 1px solid #f7685c; }
+  .descriptions .meme .full-site {
+    color: #e7c824; }
+    .descriptions .meme .full-site:hover {
+      border-bottom: 1px solid #e7c824; }
   .descriptions .brewskies .full-site {
     color: #007949; }
     .descriptions .brewskies .full-site:hover {
