@@ -4,7 +4,9 @@ var interests = ["data visualizations", "rock climbing", "ideating",
 "India Pale Ales", "Java", "being barefoot", "minimalism", "working with talented people",
 "Orbit Wintermint gum", "taking public transportation", "playing with dogs",
 "board games", "a tasteful romcom", "browsing Dribbble", "ice skating",
-"oatmeal for breakfast", "lending a helping hand", "functional programming"];
+"oatmeal for breakfast", "lending a helping hand", "functional programming",
+"prototyping UI components", "seafood", "open world RPGs", "Team Valor", 
+"wireframing", "contemplating impossible scenarios"];
 
 var len = interests.length;
 var index = Math.floor(Math.random() * (len));
@@ -96,16 +98,6 @@ function resizeDevice(w) {
 	showInterest();
 
 	resizeDevice(window.outerWidth);
-
-	// document.querySelector('.alert').classList.add('show');
-  // var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-  var isSafari = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
-                 navigator.userAgent && !navigator.userAgent.match('CriOS');
-  var isIOS    = /[iPad]|[iPhone]/i.test(navigator.userAgent);
-
-  if (isSafari && !isIOS) {
-    console.log("Do yourself a favor, change browsers.");
-  }
 })();
 
 document.querySelector('.cta').onclick = ctaHandler;

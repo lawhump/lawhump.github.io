@@ -150,7 +150,7 @@
   margin-top: 2rem;
   opacity: 0;
   overflow: initial;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
   // transition: width .3s ease-out;
   transform: translateY(20px);
   transition: opacity .4s ease-out,
@@ -223,7 +223,7 @@
   height: 100%;
   margin: 0;
   -webkit-overflow-scrolling: touch;
-  overflow-y: scroll;
+  // overflow-y: scroll;
   padding: 0;
   width: 100%;
 }

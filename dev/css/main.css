@@ -983,7 +983,7 @@ article {
   margin-top: 2rem;
   opacity: 0;
   overflow: initial;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
   -webkit-transform: translateY(20px);
       -ms-transform: translateY(20px);
           transform: translateY(20px);
@@ -1052,7 +1052,6 @@ article {
   height: 100%;
   margin: 0;
   -webkit-overflow-scrolling: touch;
-  overflow-y: scroll;
   padding: 0;
   width: 100%; }
 
