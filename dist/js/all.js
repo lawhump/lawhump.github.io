@@ -5,7 +5,7 @@ var interests = ["data visualizations", "rock climbing", "ideating",
 "Orbit Wintermint gum", "taking public transportation", "playing with dogs",
 "board games", "a tasteful romcom", "browsing Dribbble", "ice skating",
 "oatmeal for breakfast", "lending a helping hand", "functional programming",
-"prototyping UI components", "seafood", "open world RPGs", "Team Valor", 
+"prototyping UI components", "seafood", "open world RPGs", "Team Valor",
 "wireframing", "contemplating impossible scenarios"];
 
 var len = interests.length;
@@ -28,11 +28,17 @@ var currentDesc;
 var tabletWidth = 0.8*1280 + 30;
 var laptopWidth = 0.8*768 + 30;
 
+function submit() {
+  var message = "Hey! My name is [name], and I'm contacting you regarding [a project/employment/to chat].";
+  window.location='mailto:lawrenceh1993@gmail.com?subject=Hey Lawrence!&body=' + message;
+}
+
 function changeButton() {
 	var cta		= document.querySelector('.cta');
 	cta.classList.add('flat');
 	cta.textContent = 'Hit Me Up'
-	cta.setAttribute('href', 'mailto:lawrenceh1993@gmail.com');
+  cta.removeEventListener('click', ctaHandler);
+  cta.addEventListener('click', submit);
 }
 
 function ctaHandler () {
