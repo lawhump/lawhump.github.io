@@ -621,27 +621,27 @@ article {
           -ms-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%); }
   .portfolio .illicit:hover:before {
-    background-color: black; }
+    background-color: rgba(0, 0, 0, 0.9); }
   .portfolio .nowplaying:hover:before {
-    background-color: #2185c5; }
+    background-color: rgba(33, 133, 197, 0.9); }
   .portfolio .map:hover:before {
-    background-color: #f7685c; }
+    background-color: rgba(247, 104, 92, 0.9); }
   .portfolio .meme:hover:before {
-    background-color: #e7c824; }
+    background-color: rgba(231, 200, 36, 0.9); }
   .portfolio .natalie:hover:before {
-    background-color: #777777; }
+    background-color: rgba(119, 119, 119, 0.9); }
   .portfolio .brewskies:hover:before {
-    background-color: #007949; }
+    background-color: rgba(0, 121, 73, 0.9); }
   .portfolio .maelstrom:hover:before {
-    background-color: #41d6c3; }
+    background-color: rgba(65, 214, 195, 0.9); }
   .portfolio .frank:hover:before {
-    background-color: black; }
+    background-color: rgba(0, 0, 0, 0.9); }
   .portfolio .mcplanr:hover:before {
-    background-color: #c64747; }
+    background-color: rgba(198, 71, 71, 0.9); }
   .portfolio .neutral:hover:before {
-    background-color: #f2d81c; }
+    background-color: rgba(242, 216, 28, 0.9); }
   .portfolio .oldsite:hover:before {
-    background-color: #c2c388; }
+    background-color: rgba(194, 195, 136, 0.9); }
   .portfolio figcaption {
     left: 50%;
     opacity: 0;
