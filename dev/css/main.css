@@ -968,7 +968,7 @@ article {
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23), 0 3px 12px rgba(0, 0, 0, 0.16);
   margin-top: 2rem;
   opacity: 0;
-  overflow: initial;
+  overflow: hidden;
   padding-bottom: 5rem;
   -webkit-transform: translateY(20px);
       -ms-transform: translateY(20px);
