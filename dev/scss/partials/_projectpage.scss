@@ -49,8 +49,8 @@
 }
 
 @for $i from 1 through $numProjects {
-  .dropdown:hover .fade-#{$i},
-  .dropdown h4:hover .fade-#{$i},{
+  .dropdown:hover li:nth-of-type(#{$i}),
+  .dropdown h4:hover li:nth-of-type(#{$i}),{
     @include animation(.15s ease-out 0.03*(-1+$i)+0.05s fadeIn);
     animation-fill-mode: forwards;
   }
@@ -285,6 +285,10 @@ iframe {
 
   .meme .full-site {
     @include set-project-color($color-meme);
+  }
+
+  .natalie .full-site {
+    @include set-project-color($color-natalie);
   }
 
   .brewskies .full-site {

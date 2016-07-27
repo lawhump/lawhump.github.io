@@ -76,6 +76,10 @@
     background-color: $color-meme;
   }
 
+  [data-project="natalie"]:hover {
+    background-color: $color-natalie;
+  }
+
   [data-project="brewskies"]:hover {
     background-color: $color-brewskies;
   }

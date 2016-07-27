@@ -629,6 +629,8 @@ article {
     background-color: #f7685c; }
   .portfolio .meme:hover:before {
     background-color: #e7c824; }
+  .portfolio .natalie:hover:before {
+    background-color: #777777; }
   .portfolio .brewskies:hover:before {
     background-color: #007949; }
   .portfolio .maelstrom:hover:before {
@@ -784,64 +786,64 @@ article {
   padding: .5rem 0;
   width: 100%; }
 
-.dropdown:hover .fade-1,
-.dropdown h4:hover .fade-1 {
+.dropdown:hover li:nth-of-type(1),
+.dropdown h4:hover li:nth-of-type(1) {
   -webkit-animation: 0.15s ease-out 0.05s fadeIn;
   animation: 0.15s ease-out 0.05s fadeIn;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards; }
 
-.dropdown:hover .fade-2,
-.dropdown h4:hover .fade-2 {
+.dropdown:hover li:nth-of-type(2),
+.dropdown h4:hover li:nth-of-type(2) {
   -webkit-animation: 0.15s ease-out 0.08s fadeIn;
   animation: 0.15s ease-out 0.08s fadeIn;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards; }
 
-.dropdown:hover .fade-3,
-.dropdown h4:hover .fade-3 {
+.dropdown:hover li:nth-of-type(3),
+.dropdown h4:hover li:nth-of-type(3) {
   -webkit-animation: 0.15s ease-out 0.11s fadeIn;
   animation: 0.15s ease-out 0.11s fadeIn;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards; }
 
-.dropdown:hover .fade-4,
-.dropdown h4:hover .fade-4 {
+.dropdown:hover li:nth-of-type(4),
+.dropdown h4:hover li:nth-of-type(4) {
   -webkit-animation: 0.15s ease-out 0.14s fadeIn;
   animation: 0.15s ease-out 0.14s fadeIn;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards; }
 
-.dropdown:hover .fade-5,
-.dropdown h4:hover .fade-5 {
+.dropdown:hover li:nth-of-type(5),
+.dropdown h4:hover li:nth-of-type(5) {
   -webkit-animation: 0.15s ease-out 0.17s fadeIn;
   animation: 0.15s ease-out 0.17s fadeIn;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards; }
 
-.dropdown:hover .fade-6,
-.dropdown h4:hover .fade-6 {
+.dropdown:hover li:nth-of-type(6),
+.dropdown h4:hover li:nth-of-type(6) {
   -webkit-animation: 0.15s ease-out 0.2s fadeIn;
   animation: 0.15s ease-out 0.2s fadeIn;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards; }
 
-.dropdown:hover .fade-7,
-.dropdown h4:hover .fade-7 {
+.dropdown:hover li:nth-of-type(7),
+.dropdown h4:hover li:nth-of-type(7) {
   -webkit-animation: 0.15s ease-out 0.23s fadeIn;
   animation: 0.15s ease-out 0.23s fadeIn;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards; }
 
-.dropdown:hover .fade-8,
-.dropdown h4:hover .fade-8 {
+.dropdown:hover li:nth-of-type(8),
+.dropdown h4:hover li:nth-of-type(8) {
   -webkit-animation: 0.15s ease-out 0.26s fadeIn;
   animation: 0.15s ease-out 0.26s fadeIn;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards; }
 
-.dropdown:hover .fade-9,
-.dropdown h4:hover .fade-9 {
+.dropdown:hover li:nth-of-type(9),
+.dropdown h4:hover li:nth-of-type(9) {
   -webkit-animation: 0.15s ease-out 0.29s fadeIn;
   animation: 0.15s ease-out 0.29s fadeIn;
   -webkit-animation-fill-mode: forwards;
@@ -940,6 +942,8 @@ article {
     background-color: #F7685C; }
   .dropdown [data-project="meme"]:hover {
     background-color: #e7c824; }
+  .dropdown [data-project="natalie"]:hover {
+    background-color: #777; }
   .dropdown [data-project="brewskies"]:hover {
     background-color: #007949; }
   .dropdown [data-project="maelstrom"]:hover {
@@ -1098,6 +1102,10 @@ iframe {
     color: #e7c824; }
     .descriptions .meme .full-site:hover {
       border-bottom: 1px solid #e7c824; }
+  .descriptions .natalie .full-site {
+    color: #777; }
+    .descriptions .natalie .full-site:hover {
+      border-bottom: 1px solid #777777; }
   .descriptions .brewskies .full-site {
     color: #007949; }
     .descriptions .brewskies .full-site:hover {
