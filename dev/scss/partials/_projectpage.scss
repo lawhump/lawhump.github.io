@@ -149,7 +149,8 @@
   @include shadow(2);
   margin-top: 2rem;
   opacity: 0;
-  overflow: initial;
+  overflow: hidden;
+  // overflow: initial;
   padding-bottom: 5rem;
   // transition: width .3s ease-out;
   transform: translateY(20px);
