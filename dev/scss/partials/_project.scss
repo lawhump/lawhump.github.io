@@ -8,8 +8,8 @@
 		// backface-visibility: hidden;
 		color: #fff;
 		cursor: pointer;
-		height: 51rem;
-    margin: 0;
+		// height: 51rem;
+    margin: -1rem 0 0 0;
 		overflow: hidden;
     padding: 0;
     position: relative;
@@ -95,51 +95,17 @@
   img {
 		// -webkit-backface-visibility: hidden;
 		// backface-visibility: hidden;
+    display: block;
 		height: 100%;
 		min-height: 100%;
     transition: all .4s ease-out;
+    vertical-align: top;
 		width: 100%;
   }
-}
-
-@media all and (max-width: 1600px) {
-	.portfolio {
-		figure {
-			height: 51rem;
-		}
-	}
-}
-
-@media all and (max-width: 1200px) {
-	.portfolio {
-		figure {
-			height: 46rem;
-		}
-	}
 }
 
 @media all and (max-width: 768px) {
 	.portfolio {
 		width: 100%;
-
-		figure {
-			height: 44rem;
-		}
-	}
-}
-
-@media all and (max-width: 480px) {
-	.portfolio {
-		figure {
-			height: 33rem;
-		}
-	}
-}
-
-@media all and (max-width: 320px) {
-	.portfolio {
-		figure {
-			height: 31rem;
-		}
 	}
 }
