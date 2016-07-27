@@ -657,7 +657,6 @@ article {
   .portfolio img {
     display: block;
     height: 100%;
-    min-height: 100%;
     transition: all .4s ease-out;
     vertical-align: top;
     width: 100%; }
