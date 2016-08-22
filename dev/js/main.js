@@ -6,7 +6,8 @@ var interests = ["data visualizations", "rock climbing", "ideating",
 "board games", "a tasteful romcom", "browsing Dribbble", "ice skating",
 "oatmeal for breakfast", "lending a helping hand", "functional programming",
 "prototyping UI components", "seafood", "open world RPGs", "Team Valor",
-"wireframing", "contemplating impossible scenarios"];
+"wireframing", "contemplating impossible scenarios", "rainy days", "the Christmas season",
+"teaching", "learning"];
 
 var len = interests.length;
 var index = Math.floor(Math.random() * (len));
@@ -150,7 +151,7 @@ document.querySelector(".top-bar .right").addEventListener("click", function(e) 
 	}
 });
 
-document.querySelector(".dropdown").addEventListener("click", function(e) {
+dropdown.addEventListener("click", function(e) {
 	if(e.target && e.target.nodeName == "LI") {
     selectedProj.classList.remove('selected');
     e.target.classList.add('selected');
@@ -165,7 +166,17 @@ document.querySelector(".dropdown").addEventListener("click", function(e) {
     currentDesc = document.querySelector('.descriptions .' + e.target.dataset.project);
     currentDesc.classList.add('fadeIn');
     currentDesc.removeAttribute('hidden');
+
+    dropdown.classList.remove("hovered");
 	}
+});
+
+dropdown.addEventListener("mouseenter", function(e) {
+  dropdown.classList.add("hovered");
+});
+
+dropdown.addEventListener("mouseleave", function(e) {
+  dropdown.classList.remove("hovered");
 });
 
 document.querySelector(".left button").addEventListener("click", function(e) {

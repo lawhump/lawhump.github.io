@@ -573,7 +573,11 @@ article {
       border-bottom: 1px solid #ff5252; }
 
 .interest {
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
 
 .link {
   text-decoration: none;
@@ -598,7 +602,7 @@ article {
   .portfolio figure {
     color: #fff;
     cursor: pointer;
-    margin: -1rem 0 0 0;
+    margin: 0;
     overflow: hidden;
     padding: 0;
     position: relative;
@@ -653,7 +657,8 @@ article {
             transform: translate(-50%, -35%);
     transition: opacity .3s ease-out, -webkit-transform .3s ease-out;
     transition: opacity .3s ease-out, transform .3s ease-out;
-    transition: opacity .3s ease-out, transform .3s ease-out, -webkit-transform .3s ease-out; }
+    transition: opacity .3s ease-out, transform .3s ease-out, -webkit-transform .3s ease-out;
+    width: 70%; }
   .portfolio img {
     display: block;
     height: 100%;
@@ -768,64 +773,64 @@ article {
   padding: .5rem 0;
   width: 100%; }
 
-.dropdown:hover li:nth-of-type(1),
-.dropdown h4:hover li:nth-of-type(1) {
+.dropdown:hover .hover-1,
+.dropdown h4:hover .hover-1 {
   -webkit-animation: 0.15s ease-out 0.05s fadeIn;
   animation: 0.15s ease-out 0.05s fadeIn;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards; }
 
-.dropdown:hover li:nth-of-type(2),
-.dropdown h4:hover li:nth-of-type(2) {
+.dropdown:hover .hover-2,
+.dropdown h4:hover .hover-2 {
   -webkit-animation: 0.15s ease-out 0.08s fadeIn;
   animation: 0.15s ease-out 0.08s fadeIn;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards; }
 
-.dropdown:hover li:nth-of-type(3),
-.dropdown h4:hover li:nth-of-type(3) {
+.dropdown:hover .hover-3,
+.dropdown h4:hover .hover-3 {
   -webkit-animation: 0.15s ease-out 0.11s fadeIn;
   animation: 0.15s ease-out 0.11s fadeIn;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards; }
 
-.dropdown:hover li:nth-of-type(4),
-.dropdown h4:hover li:nth-of-type(4) {
+.dropdown:hover .hover-4,
+.dropdown h4:hover .hover-4 {
   -webkit-animation: 0.15s ease-out 0.14s fadeIn;
   animation: 0.15s ease-out 0.14s fadeIn;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards; }
 
-.dropdown:hover li:nth-of-type(5),
-.dropdown h4:hover li:nth-of-type(5) {
+.dropdown:hover .hover-5,
+.dropdown h4:hover .hover-5 {
   -webkit-animation: 0.15s ease-out 0.17s fadeIn;
   animation: 0.15s ease-out 0.17s fadeIn;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards; }
 
-.dropdown:hover li:nth-of-type(6),
-.dropdown h4:hover li:nth-of-type(6) {
+.dropdown:hover .hover-6,
+.dropdown h4:hover .hover-6 {
   -webkit-animation: 0.15s ease-out 0.2s fadeIn;
   animation: 0.15s ease-out 0.2s fadeIn;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards; }
 
-.dropdown:hover li:nth-of-type(7),
-.dropdown h4:hover li:nth-of-type(7) {
+.dropdown:hover .hover-7,
+.dropdown h4:hover .hover-7 {
   -webkit-animation: 0.15s ease-out 0.23s fadeIn;
   animation: 0.15s ease-out 0.23s fadeIn;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards; }
 
-.dropdown:hover li:nth-of-type(8),
-.dropdown h4:hover li:nth-of-type(8) {
+.dropdown:hover .hover-8,
+.dropdown h4:hover .hover-8 {
   -webkit-animation: 0.15s ease-out 0.26s fadeIn;
   animation: 0.15s ease-out 0.26s fadeIn;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards; }
 
-.dropdown:hover li:nth-of-type(9),
-.dropdown h4:hover li:nth-of-type(9) {
+.dropdown:hover .hover-9,
+.dropdown h4:hover .hover-9 {
   -webkit-animation: 0.15s ease-out 0.29s fadeIn;
   animation: 0.15s ease-out 0.29s fadeIn;
   -webkit-animation-fill-mode: forwards;
@@ -903,14 +908,16 @@ article {
     opacity: 0;
     padding: 1.2rem 0;
     width: 100%; }
+  .dropdown .hidden {
+    display: none; }
   .dropdown .fa {
     transition: all .1s; }
-  .dropdown:hover {
+  .dropdown.hovered {
     background-color: #fff;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.23), 0 10px 40px rgba(0, 0, 0, 0.19); }
-    .dropdown:hover ul {
+    .dropdown.hovered ul {
       display: block; }
-    .dropdown:hover .fa-angle-down {
+    .dropdown.hovered .fa-angle-down {
       -webkit-transform: rotate(-180deg);
           -ms-transform: rotate(-180deg);
               transform: rotate(-180deg); }

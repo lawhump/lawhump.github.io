@@ -4,12 +4,9 @@
 	width: 55%;
 
   figure {
-		// -webkit-backface-visibility: hidden;
-		// backface-visibility: hidden;
 		color: #fff;
 		cursor: pointer;
-		// height: 51rem;
-    margin: -1rem 0 0 0;
+    margin: 0;
 		overflow: hidden;
     padding: 0;
     position: relative;
@@ -27,7 +24,6 @@
       transition: background-color .3s ease-out;
       top: 0;
       width: 100%;
-      // z-index: 10;
     }
 
     &:hover {
@@ -90,11 +86,10 @@
     top: 50%;
     transform: translate(-50%, -35%);
     transition: opacity .3s ease-out, transform .3s ease-out;
+    width: 70%;
   }
 
   img {
-		// -webkit-backface-visibility: hidden;
-		// backface-visibility: hidden;
     display: block;
 		height: 100%;
     transition: all .4s ease-out;

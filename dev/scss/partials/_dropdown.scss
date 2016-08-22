@@ -37,11 +37,15 @@
     width: 100%;
   }
 
+  .hidden {
+    display: none;
+  }
+
   .fa {
     transition: all .1s;
   }
 
-  &:hover {
+  &.hovered {
     background-color: #fff;
     @include shadow(3);
 
