@@ -26,7 +26,7 @@
 	img {
 		border-radius: 50%;
 		height: 20rem;
-		transition: height .3s ease-in-out, width .3s ease-in-out;
+		transition: height .3s ease-out, width .3s ease-out;
 		transition-delay: .1s;
 		width: 20rem;
 	}
@@ -38,11 +38,16 @@
 
 	.blurb {
 		margin-top: 1.4rem;
-		transition: opacity .4s ease-in-out;
+    opacity: 0;
+		transition: opacity .4s ease-out;
 
 		h2 {
 			margin: 2rem 0 1.2rem 0;
 		}
+
+    &.show {
+      opacity: 1;
+    }
 	}
 
 	a:not(.cta) {
@@ -60,7 +65,7 @@
 
 .link {
 	text-decoration: none;
-	transition: color .3s ease-in-out;
+	transition: color .3s ease-out;
 
 	&:hover i{
 		color: $accent-color;

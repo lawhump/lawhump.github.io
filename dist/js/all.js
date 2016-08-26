@@ -1,87 +1,93 @@
-var interests = ["data visualizations", "rock climbing", "ideating",
-"triangles", "eclectic music", "geometric design", "Radiolab",
-"Ruby", "adventuring", "dancing", "driving at night", "coffee", "meeting new people",
-"India Pale Ales", "Java", "being barefoot", "minimalism", "working with talented people",
-"Orbit Wintermint gum", "taking public transportation", "playing with dogs",
-"board games", "a tasteful romcom", "browsing Dribbble", "ice skating",
-"oatmeal for breakfast", "lending a helping hand", "functional programming",
-"prototyping UI components", "seafood", "open world RPGs", "Team Valor",
-"wireframing", "contemplating impossible scenarios", "rainy days", "the Christmas season",
-"teaching", "learning"];
+var $ = function $(query) {
+    var res = document.querySelectorAll(query);
+    if (res.length === 1) {
+        return res[0];
+    }
+    return res;
+};
+
+var interests = [
+                  "data visualizations", "rock climbing", "ideating",
+                  "triangles", "eclectic music", "geometric design", "Radiolab",
+                  "Ruby", "adventuring", "dancing", "driving at night",
+                  "coffee", "meeting new people", "India Pale Ales", "Java",
+                  "being barefoot", "minimalism", "working with talented people",
+                  "Orbit Wintermint gum", "taking public transportation",
+                  "playing with dogs", "board games", "a tasteful romcom",
+                  "browsing Dribbble", "ice skating", "oatmeal for breakfast",
+                  "lending a helping hand", "functional programming",
+                  "prototyping UI components", "seafood", "open world RPGs",
+                  "Team Valor", "wireframing",
+                  "contemplating impossible scenarios", "rainy days",
+                  "the Christmas season", "teaching", "learning",
+                  "expressive code"
+                ];
 
 var len = interests.length;
 var index = Math.floor(Math.random() * (len));
 
-var currDevice = document.querySelector('.right .selected');
-var address = document.querySelector('.address');
+var currDevice = $('.right .selected');
+var address = $('.address');
 var iframe = document.getElementById('iframe');
-var dropdown = document.querySelector('.dropdown');
-var home = document.querySelector('.home');
-var projectPage = document.querySelector('.project-page-wrapper');
+var dropdown = $('.dropdown');
+var home = $('.home');
+var projectPage = $('.project-page-wrapper');
 
-var bodyWrapper = document.querySelector('.body-wrapper');
+var bodyWrapper = $('.body-wrapper');
+
+var portfolio = $('section.portfolio');
 
 var selectedProj;
-// var selectedProj = dropdown.querySelector('.selected');
 var currentDesc;
-// var currentDesc = document.querySelector('.descriptions .' + selectedProj.dataset.project);
 
 var tabletWidth = 0.8*1280 + 30;
 var laptopWidth = 0.8*768 + 30;
 
-function submit() {
-  var message = "Hey! My name is [name], and I'm contacting you regarding [a project/employment/to chat].";
-  window.location='mailto:lawrenceh1993@gmail.com?subject=Hey Lawrence!&body=' + message;
-}
 
-function changeButton() {
-	var cta		= document.querySelector('.cta');
-	cta.classList.add('flat');
-	cta.textContent = 'Hit Me Up'
-  cta.removeEventListener('click', ctaHandler);
-  cta.addEventListener('click', submit);
-}
 
 function ctaHandler () {
-	var me 		= document.querySelector('.me img');
-	var blurb = document.querySelector('.blurb');
+  function changeButton() {
+    function submit() {
+      var message = "Hey! My name is [name], and I'm contacting you regarding [a project/employment/to chat].";
+      window.location='mailto:lawrenceh1993@gmail.com?subject=Hey Lawrence!&body=' + message;
+    }
+
+    var cta		= $('.cta');
+    cta.classList.add('flat');
+    cta.textContent = 'Hit Me Up'
+    cta.removeEventListener('click', ctaHandler);
+    cta.addEventListener('click', submit);
+  }
+
+	var me 		= $('.me img');
+	var blurb = $('.blurb');
 
 	// TODO animate me first, setTimeout for the blurb
 
 	me.classList.add('shrink');
   // This can be done with CSS
-	$('.blurb').fadeIn({
-			'duration': 200,
-			'complete': changeButton
-	});
-	$('.blurb').removeClass('hidden');
-}
+  var blurb = $('.blurb');
+  blurb.removeAttribute('hidden');
 
-function showInterest () {
-	var interest = interests[index];
-
-	var interestSpan = document.querySelector('.interest');
-	interestSpan.textContent = interest;
-	index = (index+1)%len;
-}
-
-function fadeMeIn() {
-	document.querySelector('.me').classList.add('fadeIn');
+  window.setTimeout(function() {
+    blurb.classList.add('show');
+    changeButton();
+  }, 100);
 }
 
 function resizeDevice(w) {
   var width = w;
 
-  var phone = document.querySelector('.right .fa-mobile');
-  var tablet = document.querySelector('.right .fa-tablet');
-  var selected = document.querySelector('.right .selected');
+  var phone = $('.right .fa-mobile');
+  var tablet = $('.right .fa-tablet');
+  var selected = $('.right .selected');
 
   if(width < 1300) {
     if(width < 1030) {
       selected.classList.remove('selected');
       phone.classList.add('selected');
 
-      var iframeContainer = document.querySelector('.iframe-container .container');
+      var iframeContainer = $('.iframe-container .container');
       iframeContainer.classList.remove('tablet');
       iframeContainer.classList.add('phone');
 
@@ -91,7 +97,7 @@ function resizeDevice(w) {
       selected.classList.remove('selected');
       tablet.classList.add('selected');
 
-      var iframeContainer = document.querySelector('.iframe-container .container');
+      var iframeContainer = $('.iframe-container .container');
       iframeContainer.classList.remove('laptop');
       iframeContainer.classList.add('tablet');
 
@@ -100,20 +106,33 @@ function resizeDevice(w) {
   }
 }
 
+function showInterest () {
+  var interest = interests[index];
+
+  var interestSpan = $('.interest');
+  interestSpan.textContent = interest;
+  index = (index+1)%len;
+}
+
 (function() {
+
+  function fadeMeIn() {
+  	$('.me').classList.add('fadeIn');
+  }
+
 	fadeMeIn();
 	showInterest();
 
 	resizeDevice(window.outerWidth);
 })();
 
-document.querySelector('.cta').onclick = ctaHandler;
-document.querySelector('.interest').onclick = showInterest;
+$('.cta').onclick = ctaHandler;
+$('.interest').onclick = showInterest;
 
-document.querySelector(".portfolio").addEventListener("click", function(e) {
+$(".portfolio").addEventListener("click", function(e) {
 	if(e.target && e.target.nodeName == "IMG") {
-		var me = document.querySelector('.me');
-		var portfolio = document.querySelector('.portfolio');
+		var me = $('.me');
+		var portfolio = $('.portfolio');
 
     window.scrollTo(0, 0);
 
@@ -122,7 +141,7 @@ document.querySelector(".portfolio").addEventListener("click", function(e) {
 
 		selectedProj = dropdown.querySelector('[data-project="'+e.target.dataset.name+'"]');
 		selectedProj.classList.add('selected');
-		currentDesc = document.querySelector('.descriptions .' + e.target.dataset.name);
+		currentDesc = $('.descriptions .' + e.target.dataset.name);
     currentDesc.classList.add('fadeIn');
 		currentDesc.removeAttribute('hidden');
 
@@ -140,9 +159,9 @@ document.querySelector(".portfolio").addEventListener("click", function(e) {
 	}
 });
 
-document.querySelector(".top-bar .right").addEventListener("click", function(e) {
+$(".top-bar .right").addEventListener("click", function(e) {
 	if(e.target && e.target.nodeName == "I") {
-    var iframeContainer = document.querySelector('.'+currDevice.dataset.device);
+    var iframeContainer = $('.'+currDevice.dataset.device);
     currDevice.classList.remove('selected');
     e.target.classList.add('selected');
     iframeContainer.classList.remove(currDevice.dataset.device);
@@ -163,7 +182,7 @@ dropdown.addEventListener("click", function(e) {
     currentDesc.classList.add('fadeOut');
     currentDesc.setAttribute('hidden', '');
 
-    currentDesc = document.querySelector('.descriptions .' + e.target.dataset.project);
+    currentDesc = $('.descriptions .' + e.target.dataset.project);
     currentDesc.classList.add('fadeIn');
     currentDesc.removeAttribute('hidden');
 
@@ -179,7 +198,8 @@ dropdown.addEventListener("mouseleave", function(e) {
   dropdown.classList.remove("hovered");
 });
 
-document.querySelector(".left button").addEventListener("click", function(e) {
+
+$(".left button").addEventListener("click", function(e) {
   bodyWrapper.classList.remove('scroll');
   iframe.parentNode.classList.remove('active');
   currentDesc.classList.add('fadeOut');
@@ -193,9 +213,15 @@ window.onresize = function(e) {
 	resizeDevice(e.target.outerWidth);
 };
 
-$("input:text").focus(function() { $(this).select(); } );
-document.querySelector('.address').addEventListener('focus', function(e) {
-  console.log(e);
+// window.onscroll = function(e) {
+//   console.log('bitch');
+//   if (!projectPage.classList.contains('show')) {
+//     portfolio.scrollTop += 10;
+//   }
+// };
+
+$('.address').addEventListener('focus', function(e) {
+  $('.iframe-container .address').select();
 });
 
 // Avoid `console` errors in browsers that lack a console.
