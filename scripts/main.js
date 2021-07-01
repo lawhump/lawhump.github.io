@@ -1,0 +1,1 @@
+"use strict";var $=function(t){var e=document.querySelectorAll(t);return 1===e.length?e[0]:e},toggleBio=function(t){$(".bio").classList.toggle("toggled")};$(".bio-container").addEventListener("click",function(t){toggleBio(t)});
